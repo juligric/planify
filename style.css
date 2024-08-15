@@ -1,0 +1,21 @@
+/* Estilo general del contenedor Swiper */
+.swiper {
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+}
+
+/* Estilo de cada slide */
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Personalización de los botones de navegación */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+}

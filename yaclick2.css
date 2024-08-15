@@ -1,0 +1,29 @@
+.cine {
+    background-image: url("descarga\ \(1\).jfif");
+    width:100%;
+    height: 200px;
+    }
+    .buttons {
+        margin: 0; 
+        margin-top: 2mm; 
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    button {
+        margin: 5px;
+    
+    }
+    .top {
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        width: 100%;
+        height: 100px;
+    }
+    
+    .top img{
+        width: 100px;
+    }

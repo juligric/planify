@@ -50,7 +50,19 @@
         </div>
         
     </div>
-      <div class="swiper-slide" style="background-color: lightyellow;">Card 5</div>
+      <div class="swiper-slide" style="background-color: lightyellow;">
+        <p class="preguntaf">4. ¿Qué ritmo prefieres para tu tiempo libre?</p> 
+        <div class="opicones">
+          <label><input type="radio" name="q5" value="a"> Haciendo una maratón de pelis</label><br>
+        <label><input type="radio" name="q5" value="b"> Haciendo senderismo o deportes</label><br>
+        <label><input type="radio" name="q5" value="c"> Visitando un lugar interesante</label><br>
+        <label><input type="radio" name="q5" value="d"> Haciendo un taller de algo nuevo</label>
+        </div>
+    </div>
+
+    <div class="swiper-slide" style="background-color: red">
+      <p class="preguntaf">calcular resultados</p> 
+      <button type="button" onclick="calcularPlan()">Descubre tu plan ideal</button>
     </div>
 
     <!-- Botones de navegación -->
@@ -60,6 +72,7 @@
     <!-- Paginación -->
     <div class="swiper-pagination"></div>
   </div>
+  <div id="resultado"></div>
 
   <!-- Enlace al JS de Swiper y archivo custom -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

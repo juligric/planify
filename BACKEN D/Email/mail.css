@@ -1,0 +1,70 @@
+
+:root {
+  --color-1: oklch(49.42% 6.08% 183.38);
+  --color-2: oklch(86.9% 5.25% 51.81);
+  --color-3: oklch(94.82% 2.1% 72.15);
+  --color-4: oklch(100% 0% 0);
+}
+
+body {
+  background: linear-gradient(90deg, var(--color-1) 0%, var(--color-1) 25%, var(--color-2) 25%, var(--color-2) 50%, var(--color-3) 50%, var(--color-3) 75%, var(--color-4) 75%, var(--color-4) 100%);
+}
+
+:root {
+  --color-1: hsl(171.43, 34.57%, 31.76%);
+  --color-2: hsl(22, 68.18%, 82.75%);
+  --color-3: hsl(32.5, 60%, 92.16%);
+  --color-4: hsl(0, 27%, 49%);
+}
+
+body {
+  background: linear-gradient(90deg, var(--color-1) 0%, var(--color-1) 25%, var(--color-2) 25%, var(--color-2) 50%, var(--color-3) 50%, var(--color-3) 75%, var(--color-4) 75%, var(--color-4) 100%);
+}
+
+:root {
+  --color-1: rgb(53, 109, 101);
+  --color-2: rgb(241, 203, 181);
+  --color-3: rgb(247, 236, 223);
+  --color-4: rgb(255, 255, 255);
+}
+
+body {
+  background: linear-gradient(90deg, var(--color-1) 0%, var(--color-1) 25%, var(--color-2) 25%, var(--color-2) 50%, var(--color-3) 50%, var(--color-3) 75%, var(--color-4) 75%, var(--color-4) 100%);
+}
+
+:root {
+  --color-1: #356d65;
+  --color-2: #f1cbb5;
+  --color-3: #f7ecdf;
+  --color-4: #ffffff;
+}
+
+body {
+  background: linear-gradient(90deg, var(--color-1) 0%, var(--color-1) 25%, var(--color-2) 25%, var(--color-2) 50%, var(--color-3) 50%, var(--color-3) 75%, var(--color-4) 75%, var(--color-4) 100%);
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.field label {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+
+.field input {
+  display: block;
+  min-width: 250px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  background-color: #4460AA;
+  color: #fff;
+  border: none
+}

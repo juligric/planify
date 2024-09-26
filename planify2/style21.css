@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,17 +7,30 @@
 }
 
 html, body {
+  font-family: 'Karla', sans-serif;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    
 }
 
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 800
+
+.karla-<uniquifier> {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 .fondoburbujas {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    z-index: 0; /* Asegura que esté detrás de la navegación */
+
 }
 
 .fondoburbujas img {
@@ -43,91 +58,152 @@ html, body {
     /*transform: scale(1.5); /* Aumenta el tamaño en 1.5 veces */
 }
 
-.header {
-    width: 70%;
-    height: 50px;
-    background-color: #007bff; /* Color de fondo para la barra de navegación */
-    padding: 10px 0;
-    position: fixed; /* Fija la barra en la parte superior */
-    top: 20px;
-    left: 15%;
-    z-index: 10; /* Asegura que esté por encima del contenido */
-    
+.burbuja1 {
+  position: absolute;
+  margin-bottom: 40px;  /* Ajusta la posición vertical si es necesario */
+  right: 0%;   /* Ajusta la posición horizontal si es necesario */
+  width: 250px; /* Tamaño deseado para la burbuja */
+  height: auto; /* Mantiene la proporción */
+}
+
+.burbuja1 img {
+  max-width: 100%; /* Se ajusta al contenedor */
+  height: auto;    /* Mantiene la proporción de la imagen */
+}
+
+.navegacion {
+  width:  1000px;
+  margin: 30px auto;
+  background:white;
+  z-index: 100;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.navegacion ul{
+  list-style: none;
+
+}
+.menu > li{
+position: relative ;
+display: inline-block;
+margin: 0 15px;
+}
+.menu > li > a{
+  display: block;
+  padding: 15px 20px;
+  color: black;
+  text-decoration: none;
+
+}
+.menu li a:hover {
+  color: grey;
+  transition: all .3s;/* para que tarde mas en pintarse*/
+
+
+}
+/*submenu1*/
+.submenu1 {
+  position: absolute;
+  background: white;
+  width: 130%;
+  display: none;
+}
+.submenu1 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+.menu li:hover .submenu1 {
+  display: block;
 
 }
 
-/* Estilos del header */
-.header {
-  width: 70%;
-  height: 50px;
-  background-color: #007bff; /* Color de fondo para la barra de navegación */
-  padding: 10px 0;
-  position: fixed; /* Fija la barra en la parte superior */
-  top: 20px;
-  left: 15%;
-  z-index: 10; /* Asegura que esté por encima del contenido */
+.submenu2 {
+  position: absolute;
+  background: white;
+  width: 130%;
+  display: none;
+}
+.submenu2 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+.menu li:hover .submenu2 {
+  display: block;
+
 }
 
-/* Estilos del menú desplegable (cuadro rectangular) */
-/* Estilos del header */
+.submenu3 {
+  position: absolute;
+  background:white;
+  width: 130%;
+  display: none;
+}
+.submenu3 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+.menu li:hover .submenu3 {
+  display: block;
 
+}
+
+
+.submenu4 {
+  position: absolute;
+  background: white;
+  width: 130%;
+  display: none;
+}
+.submenu4 li a {
+  display: block;
+  padding: 15px;
+  color: black;
   
-  /* Estilos del menú desplegable (cuadro rectangular) */
- /* Estilos del header */
-.header {
-    width: 70%;
-    height: 50px;
-    background-color: #007bff; /* Color de fondo para la barra de navegación */
-    padding: 10px 0;
-    position: fixed; /* Fija la barra en la parte superior */
-    top: 20px;
-    left: 15%;
-    z-index: 10; /* Asegura que esté por encima del contenido */
-  }
-  
-  /* Estilo del botón de "Servicios" */
-  .dropbtn {
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    background-color:+red;
-  }
-  
-  .dropbtn:hover {
-    background-color: red; /* Cambia el color cuando se pasa el ratón por encima de "Servicios" */
-  }
-  
-  /* Estilos del menú desplegable (cuadro rectangular) */
-  .dropdown-content {
-    display: none; /* Inicialmente oculto */
-    position: absolute; /* Posicionamiento flotante */
-    background-color: #333; /* Color de fondo del cuadro */
-    min-width: 160px; /* Ancho mínimo del cuadro desplegable */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para darle efecto de profundidad */
-    padding: 10px 0; /* Espacio dentro del cuadro */
-    z-index: 1; /* Asegura que el menú se quede al frente de otros elementos */
-    top: 50px; /* Se despliega justo debajo del botón */
-    left: 0; /* Alineado con el botón */
-  }
-  
-  /* Estilos de los ítems dentro del cuadro */
-  .dropdown-content li {
-    padding: 0;
-  }
-  
-  .dropdown-content li a {
-    padding: 10px 20px; /* Espaciado dentro de los ítems del dropdown */
-    text-decoration: none;
-    display: block;
-    color: white;
-  }
-  
-  .dropdown-content li a:hover {
-    background-color: #555; /* Cambia el color cuando se pasa el ratón por encima */
-  }
-  
-  /* Mostrar el cuadro rectangular solo al pasar el mouse sobre el botón "Servicios" */
-  .dropdown:hover .dropdown-content {
-    display: block; 
-  }
-  
+  text-decoration: none;
+}
+.menu li:hover .submenu4 {
+  display: block;
+
+}
+
+.submenu5 {
+  position: absolute;
+  background: white;
+  width: 130%;
+  display: none;
+}
+.submenu5 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+.menu li:hover .submenu5 {
+  display: block;
+}
+
+.submenu6 {
+  position: absolute;
+  background: white;
+  width: 130%;
+  display: none;
+}
+.submenu6 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+.menu li:hover .submenu6 {
+  display: block;

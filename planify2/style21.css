@@ -70,9 +70,22 @@ html, body {
   max-width: 100%; /* Se ajusta al contenedor */
   height: auto;    /* Mantiene la proporción de la imagen */
 }
+.burbuja2 {
+  position: absolute;
+  margin-bottom: 40px;  /* Ajusta la posición vertical si es necesario */
+  right: 40%;   /* Ajusta la posición horizontal si es necesario */
+  width: 250px; /* Tamaño deseado para la burbuja */
+  height: auto; /* Mantiene la proporción */
+}
+
+.burbuja2 img {
+  max-width: 100%; /* Se ajusta al contenedor */
+  height: auto;    /* Mantiene la proporción de la imagen */
+}
+
 
 .navegacion {
-  width:  1000px;
+  width:  1200px;
   margin: 30px auto;
   background:white;
   z-index: 100;
@@ -207,3 +220,4 @@ margin: 0 15px;
 }
 .menu li:hover .submenu6 {
   display: block;
+}

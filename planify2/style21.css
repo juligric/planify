@@ -60,7 +60,7 @@ html, body {
 
 .burbuja1 {
   position: absolute;
-  margin-bottom: 40px;  /* Ajusta la posición vertical si es necesario */
+ top: px;
   right: 0%;   /* Ajusta la posición horizontal si es necesario */
   width: 250px; /* Tamaño deseado para la burbuja */
   height: auto; /* Mantiene la proporción */
@@ -82,6 +82,32 @@ html, body {
   max-width: 100%; /* Se ajusta al contenedor */
   height: auto;    /* Mantiene la proporción de la imagen */
 }
+
+.burbujas3 {
+  position: absolute;
+  width: 250px; /* Tamaño deseado para la burbuja */
+  height: auto; /* Mantiene la proporción */
+  top: 200px;
+}
+
+.burbujas3 img {
+  max-width: 100%; /* Se ajusta al contenedor */
+  height: auto;    /* Mantiene la proporción de la imagen */
+}
+
+.burbujas4 {
+  position: absolute;
+  width: 400px; /* Tamaño deseado para la burbuja */
+  height: auto; /* Mantiene la proporción */
+  top: 370px;
+  right: 10%;
+}
+
+.burbujas4 img {
+  max-width: 100%; /* Se ajusta al contenedor */
+  height: auto;    /* Mantiene la proporción de la imagen */
+}
+
 
 
 .navegacion {

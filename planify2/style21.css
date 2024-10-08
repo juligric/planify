@@ -301,6 +301,14 @@ margin: 0 15px;
 
 }
 
+
+.cuadrados {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+
 .contenedorIvo{
   width: 100%;
   height: 100vh;

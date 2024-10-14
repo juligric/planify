@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio Dinámico de Imágenes e Información</title>
+    <link href="style21.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600;800&display=swap" rel="stylesheet">
+
+</head> 
+
+
+
+<body>
+  <header>
+    <nav class= "navegacion"> <!--esto es para que me diga que es un menu de navegacion-->
+        <ul  class= "menu">
+            <li><a href="#">Espacios Cerrados</a>
+              <ul class="submenu1">
+                <li><a href="#" class="menu-item" onclick="mostrarInfo('infoParques')">Parques</a></li>
+                <li><a href="#"  class="menu-item" onclick="mostrarInfo('infoTrepar')">Trepar</a></li>
+                <li><a href="#" class="menu-item" onclick="mostrarInfo('infoExperiencias')">Experiencias</a></li>
+                <li><a href="#" class="menu-item" onclick="mostrarInfo('infoPaintball')">Paintball</a></li>
+                <li><a href="#"  class="menu-item"onclick="mostrarInfo('infoGolf')">Golf</a></li>
+                <li><a href="#" class="menu-item" onclick="mostrarInfo('infoFútbol')">Fútbol</a></li>
+                <li><a href="#" class="menu-item" onclick="mostrarInfo('infoAcuarios')">acuarios</a></li>
+                <li><a href="#" class="menu-item" onclick="mostrarInfo('infoMeriendas')">meriendas</a></li>
+                  <li><a href="#" class="menu-item" onclick="mostrarInfo('infoIrdecompras')">ir de compras</a>
+
+
+            </ul> 
+          </li>
+        
+            
+            <li><a href="#">Espacios Abiertos</a>
+              <ul class="submenu2">
+                <li><a href="#" onclick="mostrarInfo('infoBowling')">bowling</a></li>
+                <li><a href="#" onclick="mostrarInfo('infoShopping')">shopping</a></li>
+                <li><a href="#" onclick="mostrarInfo('infoCeramica')">ceraamica</a> </li>
+                <li><a href="#" onclick="mostrarInfo('infoCine')">cine</a> </li>
+                <li><a href="#" onclick="mostrarInfo('infoYoga')">yoga</a> </li>
+                <li><a href="#" onclick="mostrarInfo('infoSpa')">spa</a> </li>
+                <li><a href="#" onclick="mostrarInfo('infoEscaperoom')">Escape room</a> </li>
+                <li><a href="#"onclick="mostrarInfo('infoTeatro')">teatro</a> </li>
+                <li><a href="#" onclick="mostrarInfo('infoeIracomer')">ir a comer</a> </li>
+
+
+            </ul> 
+          </li>
+       
+            <li><a href="#">Solo nosotros 2</a>
+            <ul class="submenu3">
+                    <li><a href="#"  onclick="mostrarInfo('infoCeramica')">ceramica</a></li>
+                    <li><a href="#"  onclick="mostrarInfo('infoMuseo')">museo</a></li>
+                    <li><a href="#" onclick="mostrarInfo('infoParques')" >parque</a>
+                      <li><a href="#" onclick="mostrarInfo('infoMeriendas')" >merendar</a> </li>
+                      <li><a href="#" onclick="mostrarInfo('infoPool')">pool</a> </li>
+                      <li><a href="#" onclick="mostrarInfo('infoIrdecompras')" >ir de compras</a> </li>
+                      <li><a href="#"onclick="mostrarInfo('infoCena')">cena</a> </li>
+                      <li><a href="#" onclick="mostrarInfo('infoTeatro')">teatro</a> </li>
+                      <li><a href="#" onclick="mostrarInfo('infoExperiencias')">Experiencia</a> 
+
+                    
+                </ul> 
+            </li>
+            <li><a href="#">4-6 perosonas</a>
+            <ul class="submenu4">
+                <li><a href="#" onclick="mostrarInfo('infoETrepar')">trepar</a></li>
+                <li><a href="#" onclick="mostrarInfo('infoCine')">cine</a></li>
+                <li><a href="#" onclick="mostrarInfo('infoCamaselsticas')">camas elasticas</a> </li>
+                <li><a href="#" onclick="mostrarInfo('infoMeriendas')">merendar</a> </li>
+                <li><a href="#" onclick="mostrarInfo('infoCena')">cena</a> </li>
+                <li><a href="#" onclick="mostrarInfo('infoBowling')">bowling</a> </li>
+                <li><a href="#" onclick="mostrarInfo('infoParquedediversiones')">parque de diversiones</a> </li>
+                <li><a href="#" onclick="mostrarInfo('infoTeatro')">teatro</a> </li>
+                <li><a href="#" onclick="mostrarInfo('infoEscaperoom')">Escpae room</a> 
+              
+
+            </ul> 
+            </li>
+
+            <li><a href="#">6-8 personas</a>
+              <ul class="submenu5">
+                <li><a href="#" onclick="mostrarInfo('infoTrepar')">trepar</a></li>
+                <li><a href="#" onclick="mostrarInfo('infoCine')">cine</a></li>
+                <li><a href="#" onclick="mostrarInfo('infoCamaselsticas')">camas elasticas</a></li>
+                <li><a href="#" onclick="mostrarInfo('infoPaintball')">Paintball </a></li>
+                <li><a href="#" onclick="mostrarInfo('infoCena')">cena</a></li>
+                <li><a href="#" onclick="mostrarInfo('infoBowling')">bowling</a></li>
+                <li><a href="#" onclick="mostrarInfo('infoParquedediversiones')">parque de diverisones</a></li>
+                <li><a href="#" onclick="mostrarInfo('infoBares')">bares</a></li>
+                <li><a href="#" onclick="mostrarInfo('infoEscaperoom')">Escape room</a></li>
+                
+                
+
+            </ul> 
+            </li>
+
+            <li><a href="#">8+ peronas</a>
+              <ul class="submenu6">
+                <li><a href="#" onclick="mostrarInfo('infoExperiencias')">Experiencias</a></li>
+                <li><a href="#" onclick="mostrarInfo('infoCine')">Cine</a></li>
+                <li><a href="#" onclick="mostrarInfo('infoCamaselsticas')">Camas elasticas</a></li>
+                <li><a href="#" onclick="mostrarInfo('infoPaintball')">Paintball</a></li>
+                <li><a href="#" onclick="mostrarInfo('infoCena')">Cena</a></li>
+                <li><a href="#" onclick="mostrarInfo('infoMuseo')">museo</a></li>
+                <li><a href="#" onclick="mostrarInfo('infoParquedediversiones')">Parque de diverisones</a></li>
+                <li><a href="#" onclick="mostrarInfo('infoBares')">Bares</a></li>
+                <li><a href="#" onclick="mostrarInfo('infoFútbol')">Futbol</a>
+
+            </ul> 
+            </li>
+        </ul>
+    </nav>
+  
+  
+
+      </div>
+  </div>
+</header>
+
+  
+  <div class="fondoburbujas">
+    <img src="planify blur 1.png" alt="fondo" />
+  </div>
+  
+  <div class="hero">
+    <div class="burbuja1">
+      <img src="c4d1ec221578a73fdc8565d4ece7935f-removebg-preview_1__1_-removebg-preview.png" alt="burbuja1">
+  </div>
+  <div class="burbuja2">
+    <img src="burbujas2.png" alt="burbuja1">
+</div>
+<div class= "burbujas3">
+  <img src="Zyrene_s__-removebg-preview 1 (1).png" alt="burbujas3">
+
+</div>
+<div class= "burbujas4">
+  <img src="burbujas4.png" alt="burbujas4">
+</div>
+<div class="planify">
+  <img src="Planify_3-removebg-preview.png" alt="titulo" />
+</div>
+</div>
+
+
+
+  
+</div>
+  
+
+
+
+    <section class="contenedorIvo">
+      <div class="renglon">
+        <div class="grid">
+            <div class="imagen1"><img src="descarga (1).jfif" alt="Imagen 1"></div>
+            <div class="imagen1"><img src="descarga (1).jfif" alt="Imagen 2"></div>
+            <div class="imagen1"><img src="descarga (1).jfif" alt="Imagen 3"></div>
+            <div class="imagen1"><img src="descarga (1).jfif" alt="Imagen 4"></div>
+        </div>
+        <div class="aside">
+            <div id="rect1" class="rectangle"></div>
+            <div>
+                <p>La pregunta que se va a hacer</p>
+            </div>
+            <div class="options">
+                <label><input type="radio" name="que" value="XXXX"> a) XXXX</label>
+                <label><input type="radio" name="que" value="XXXX"> b) XXXX</label>
+                <label><input type="radio" name="que" value="XXXX"> c) XXXX</label>
+                <label><input type="radio" name="que" value="XXXX"> d) XXXX</label>
+            </div>
+        </div>
+  
+  
+        
+    </div>
+  
+    <div class="quiz">
+        <p>texto 1</p>
+        <p>texto 2</p>
+    </div>
+    </section>
+
+    </body>
+  
+    
+    <script src="script2.js"></script>
+</html>
+
+

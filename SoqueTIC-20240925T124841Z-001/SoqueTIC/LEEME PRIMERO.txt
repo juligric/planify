@@ -1,0 +1,5 @@
+SoqueTIC es la librería de proyecto de 3ero TIC que simplifica la comunicación frontend - backend en aplicaciones locales con NodeJS
+
+Acá encuentran toda la documentación:
+
+https://github.com/nachovigilante/SoqueTIC

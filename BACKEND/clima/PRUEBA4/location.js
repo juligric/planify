@@ -6,6 +6,7 @@ const server = http.createServer(app);
 const io = require('socket.io')(server); // Para comunicación en tiempo real
 const fetch = require('node-fetch');
 
+
 const apiKey = '8bf54ab6c5f08ef8bc5a6b39cd7a3e3a';
 
 // Sirve el archivo HTML

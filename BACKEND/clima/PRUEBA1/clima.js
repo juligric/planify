@@ -15,6 +15,7 @@ async function getWeather(city) {
     }
 }
 
+
 // Función para recomendar planes según el clima
 function recommendPlans(weatherDescription) {
     const plansList = document.getElementById('plans');

@@ -59,24 +59,7 @@ const swiper = new Swiper('.mySwiper', {
       }
     };
   
-    // Definir recomendaciones similares
-    const recomendaciones = {
-      'Cine (relajado)': ['Teatro', 'Concierto'],
-      'Pilates (activo)': ['Yoga', 'Escalada'],
-      'Museo (curioso)': ['Galería de arte', 'Exposición de ciencia'],
-      'Cerámica (creativo)': ['Pintura', 'Taller de manualidades'],
-      'Parque de diversiones (activo)': ['Karting', 'Mini golf'],
-      'Escape room (curioso)': ['Casa del terror', 'Paseo virtual'],
-      'Pintar remeras (creativo)': ['Taller de costura', 'Diseño de estampas'],
-      'Bowling (relajado)': ['Billar', 'Cafetería con juegos'],
-      'Paintball (activo)': ['Láser tag', 'Gimnasio'],
-      'Zoológico (curioso)': ['Acuario', 'Parque natural'],
-      'Competencia de cocina (creativo)': ['Taller de repostería', 'Clase de cocina internacional'],
-      'Picnic (relajado)': ['Paseo por el parque', 'Juegos de mesa al aire libre'],
-      'Fútbol (activo)': ['Voleibol', 'Carrera de relevos'],
-      'Guía turística (curioso)': ['Visita a monumentos', 'Tour en bicicleta'],
-      'Búsqueda del tesoro (creativo)': ['Competencia de arte', 'Taller de escritura creativa']
-    };
+  
   
     // Obtener el plan ideal según las respuestas
     const cantidadPersonas = q1.value;
@@ -84,11 +67,9 @@ const swiper = new Swiper('.mySwiper', {
   
     const planIdeal = planes[cantidadPersonas][preferencia];
   
-    // Obtener las recomendaciones similares
-    const planesSimilares = recomendaciones[planIdeal];
   
-    // Mostrar el resultado y las recomendaciones
+   
+    // Mostrar el resultado
     document.getElementById('resultado').innerHTML = `Tu plan ideal es: ${planIdeal}`;
-    document.getElementById('recomendaciones').innerHTML = `Te recomendamos también: ${planesSimilares.join(" y ")}`;
   }
   

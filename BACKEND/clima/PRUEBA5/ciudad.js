@@ -34,19 +34,37 @@ function recommendPlans(weatherDescription) {
 
   // Propuestas de planes según el clima
   if (weatherDescription.includes('lluvia')) {
-    plans = ['Ir al cine', 'Ir a un centro comercial'];
+    plans = [ 'Ir al cine',
+    'Visitar un museo',
+    'Disfrutar de una cafetería',
+    'Ir a un centro comercial'];
   } else if (weatherDescription.includes('nubes')) {
-    plans = ['Ir a caminar por un parque', 'Andar en bici'];
+    plans = [ 'Ir a caminar por un parque',
+    'Visitar una galería de arte',
+    'Ir a una biblioteca',
+    'Disfrutar de una clase de yoga en interiores'];
   }
     else if (weatherDescription.includes('muy nuboso')) {
-        plans = ['Ir a caminar por un parque', 'Andar en bici'];
+        plans = [ 'Ir a caminar por un parque',
+        'Visitar una galería de arte',
+        'Ir a una biblioteca',
+        'Disfrutar de una clase de yoga en interiores'];
 
   } else if (weatherDescription.includes('soleado') || weatherDescription.includes('cielo claro')) {
-    plans = ['Ir a la playa', 'Visitar un jardín botánico'];
+    plans = [ 'Ir a la playa',
+    'Hacer un picnic en el parque',
+    'Salir a hacer senderismo',
+    'Visitar un jardín botánico'];
   } else if (weatherDescription.includes('nieve')) {
-    plans = ['Ir a patinar sobre hielo', 'Hacer una batalla de bolas de nieve'];
+    plans = [ 'Ir a patinar sobre hielo',
+    'Hacer una batalla de bolas de nieve',
+    'Visitar una cabaña con chimenea',
+    'Ver películas en casa con chocolate caliente'];
   } else {
-    plans = ['Hacer una visita guiada por la ciudad', 'Probar la comida local en algún restaurante'];
+    plans = [ 'Explorar el centro de la ciudad',
+    'Tomar fotos en lugares emblemáticos',
+    'Hacer una visita guiada por la ciudad',
+    'Probar la comida local en algún restaurante'];
   }
 
   console.log('Planes sugeridos según el clima:');

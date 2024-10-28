@@ -1,12 +1,12 @@
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+import{onEvent, startServer} from "soquetic"
 
-const http = require('http');
-const fetch = require('node-fetch'); // Asegúrate de tener esta dependencia instalada: npm install node-fetch
+import http  from'http';
 
 const apiKey = '8bf54ab6c5f08ef8bc5a6b39cd7a3e3a';
 
 // Función para obtener el clima de la ciudad
-const axios = require('axios');
+import axios from 'axios';
 
 async function getWeather(city) {
     try {
@@ -27,10 +27,10 @@ async function getWeather(city) {
     }
 }
 
+let plans;
 
 // Función para recomendar planes según el clima
 function recommendPlans(weatherDescription) {
-  let plans;
 
   // Propuestas de planes según el clima
   if (weatherDescription.includes('lluvia')) {
@@ -109,3 +109,5 @@ http.get({'host': 'api.ipify.org', 'port': 80, 'path': '/'}, function(resp) {
   });
 });
 
+
+startServer()

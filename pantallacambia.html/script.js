@@ -4,7 +4,7 @@ const informacion = {
         { texto: "Jardin japones", imagen: "image.png" },
         { texto: "Ecoparque", imagen: "image (6).png" },
         { texto: "Parque saavedra", imagen: "image (2).png" },
-        { texto: "Barrancas de belgrno", imagen: "image (4).png" },
+        { texto: "Barrancas de belgrano", imagen: "image (4).png" },
         { texto: "Jardin Botanico", imagen: "image (7).png" }
     ],
     "2": [
@@ -47,7 +47,6 @@ const informacion = {
         { texto: "Warzone Paintball", imagen: "image (20).png" },
         { texto: "Action live Paintball", imagen: "image (21).png" }
     ],
-
     "7": [
         { texto: "Paintball Revolution", imagen: "image (16).png" },
         { texto: "Xtreme Paintball", imagen: "image (17).png" },
@@ -58,7 +57,7 @@ const informacion = {
     ],
     "8": [
         { texto: "Patio de los lecheros", imagen: "meriendas 1.png" },
-        { texto: "lagos de Regatas", imagen: "meriendas 2.png" },
+        { texto: "Lagos de Regatas", imagen: "meriendas 2.png" },
         { texto: "El Rosedal Café", imagen: "meriendas 3.png" },
         { texto: "Club de Pescadores", imagen: "meriendas 4.png" },
         { texto: "Casa Cavia", imagen: "meriendas 5.png" },
@@ -66,23 +65,20 @@ const informacion = {
     ],
     "9": [
         { texto: "Shopping Dot Baires", imagen: "dot.png" },
-        { texto: "Distrito Arcos ", imagen: "arcos.png" },
+        { texto: "Distrito Arcos", imagen: "arcos.png" },
         { texto: "Alto Palermo Shopping", imagen: "palermo.png" },
         { texto: "Patio Bullrich", imagen: "patio.png" },
         { texto: "Alcorta Shopping", imagen: "alcorta.png" },
         { texto: "Galerias del Pacifico", imagen: "galeria.png" }
     ],
     "10": [
-        { texto: " Paloko Bowling", imagen: "bowling6.png" },
-        { texto: "Bowling snack", imagen: "bowling1.png" },
-        { texto: "Brasov bowling - Pilar", imagen: "bowling2.png" },
+        { texto: "Paloko Bowling", imagen: "bowling6.png" },
+        { texto: "Bowling Snack", imagen: "bowling1.png" },
+        { texto: "Brasov Bowling - Pilar", imagen: "bowling2.png" },
         { texto: "Bowling Palermo", imagen: "bowling3.png" },
-        { texto: "bowling Paloko - DOT", imagen: "bowling4.png" },
+        { texto: "Bowling Paloko - DOT", imagen: "bowling4.png" },
         { texto: "Galerias del Pacifico", imagen: "bowling5.png" }
-    ],
-
-
-    // Agrega más opciones según sea necesario
+    ]
 };
 
 // Función para obtener el valor del parámetro de la URL
@@ -117,43 +113,32 @@ if (opcionSeleccionada) {
     actualizarContenido(opcionSeleccionada);
 }
 
-
-
+// Función para alternar el menú lateral
 function toggleMenu() {
-    var sideMenu = document.getElementById("sideMenu");
+    const sideMenu = document.getElementById("sideMenu");
     sideMenu.classList.toggle("open");
 }
 
+// Simulación de obtención de datos y despliegue de planes
 
 
-fetchData("planes",({ubicacion...}),(data)=>{
-    mostrarPlanes(data)
-            
-    }
+fetchData("planes", (data) => {
+    console.log(data)
+    mostrarPlanes(data);
+});
 
-let data2 = [
-    {"img":"imgs/foto1", "descripcion": "cumple de ari"},
-    {,},
-    {},
-    {}
-]
-
-
-function mostrarPlanes(data2) {
+function mostrarPlanes(data) {
     let urlIMG1;
-    
-    if (data[0] === "Ir al cine") {
-        urlIMG1 = "cine clima.png"; // Inserta aquí la URL de tu imagen
-    }
-    else if (data[0] === "Visitar un museo") {
+
+    if (data[0] === "Ir a la playa") {
+        urlIMG1 = "cine clima.png";
+    } else if (data[0] === "Visitar un museo") {
         urlIMG1 = "dot.png";
     }
 
-    div1.innerHTML = `<img href="${urlIMG1}">`
-    p1.innerHTML = `<p>${data[0]}</p>`
+    const div1 = document.getElementById("div1");
+    const p1 = document.getElementById("p1");
+
+    div1.innerHTML = `<img src="${urlIMG1}" alt="Imagen del plan">`;
+    p1.innerHTML = `<p>${data[0]}</p>`;
 }
-
-
-    x.img
-    x.descripcion
-    

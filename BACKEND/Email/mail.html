@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="mail.css">
+<title> Email </title>
+</head>
+
+<body> 
+
+
+  <form id="form">
+    <div class="field">
+      <label for="name">Nombre: </label>
+      <input type="text" name="name" id="name">
+    </div>
+    <div class="field">
+      <label for="last">Apellido: </label>
+      <input type="text" name="last" id="last">
+    </div>
+    <div class="field">
+      <label for="phone">Telefono: </label>
+      <input type="text" name="phone" id="phone">
+    </div>
+    <div class="field">
+      <label for="email">Email: </label>
+      <input type="text" name="email" id="email">
+    </div>
+    <div class="field">
+      <label for="message">Mensaje: </label>
+      <input type="text" name="message" id="message">
+    </div>
+    <div class="field">
+      <label for="reply_to">reply_to</label>
+      <input type="text" name="reply_to" id="reply_to">
+    </div>
+  
+    <input type="submit" id="button" value="Send Email" >
+  </form>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+ 
+  <!-- Enlazar tu archivo JavaScript personalizado -->
+  <script src="mail.js"></script>
+</body>
+
+
+</html>

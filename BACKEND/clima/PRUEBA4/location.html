@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/socket.io/socket.io.js"></script> <!-- Cliente socket.io -->
+</head>
+<body>
+    <h1>Recomendaciones según el clima</h1>
+    <p id="location">Ciudad: </p>
+    <p id="weather">Clima: </p>
+    <h2>Planes sugeridos:</h2>
+    <ul id="plans"></ul>
+<script>
+
+
+const socket = io(); // Conecta con el servidor
+
+        socket.on('weather', function(data) {
+            const { weatherDescription, city } = data;
+
+            // Muestra el clima y ciudad en el HTML
+            document.getElementById('location').textContent = `Ciudad: ${city}`;
+            document.getElementById('weather').textContent = `Clima: ${weatherDescription}`;
+
+            // Recomendar planes según el clima
+            recommendPlans(weatherDescription);
+        });
+
+        function recommendPlans(weatherDescription) {
+            const plansList = document.getElementById('plans');
+            plansList.innerHTML = ''; // Limpiamos la lista
+
+            let plans;
+
+            if (weatherDescription.includes('lluvia')) {
+                plans = ['Ir al cine', 'Visitar un museo', 'Disfrutar de una cafetería', 'Ir a un centro comercial'];
+            } else if (weatherDescription.includes('nubes')) {
+                plans = ['Ir a caminar por un parque', 'Visitar una galería de arte', 'Ir a una biblioteca', 'Disfrutar de una clase de yoga en interiores'];
+            } else if (weatherDescription.includes('soleado') || weatherDescription.includes('cielo claro')) {
+                plans = ['Ir a la playa', 'Hacer un picnic en el parque', 'Salir a hacer senderismo', 'Visitar un jardín botánico'];
+            } else if (weatherDescription.includes('nieve')) {
+                plans = ['Ir a patinar sobre hielo', 'Hacer una batalla de bolas de nieve', 'Visitar una cabaña con chimenea', 'Ver películas en casa con chocolate caliente'];
+            } else {
+                plans = ['Explorar el centro de la ciudad', 'Tomar fotos en lugares emblemáticos', 'Hacer una visita guiada por la ciudad', 'Probar la comida local en algún restaurante'];
+            }
+
+            // Mostrar los planes en la lista
+            plans.forEach(plan => {
+                const li = document.createElement('li');
+                li.textContent = plan;
+                plansList.appendChild(li);
+            });
+        }
+
+</script>
+
+<script src="location.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Karla', sans-serif;
+    width: 100vw;
+    height: 200vh;
+
+
+    
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 800
+
+.karla-<uniquifier> {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.fondoburbujas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Asegura que esté detrás de la navegación */
+
+}
+
+.fondoburbujas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+  
+}
+
+.hero{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.planify {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra la imagen en ambos ejes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index:  1; /* Asegura que esté encima de otros elementos si es necesario */
+}
+
+.planify img {
+  max-width: 70%; /* Asegura que la imagen no se salga del contenedor */
+  height: auto;    /* Mantiene la proporción de la imagen */
+}
+
+.burbuja1 {
+  position: absolute;
+  top: 20px;  /* Ajusta la posición vertical si es necesario */
+  right: 0;   /* Ajusta la posición horizontal si es necesario */
+  width: 250px; /* Tamaño deseado para la burbuja */
+  height: 200px; /* Altura fija para habilitar el scroll */
+  z-index: 1;
+}
+
+.burbuja1 img {
+  max-width: 100%; /* Se ajusta al contenedor */
+  height: auto;    /* Mantiene la proporción de la imagen */
+}
+
+.burbuja2 {
+  position: absolute;
+  top: 0%; /* Sube la burbuja 2 más arriba en la pantalla */
+  right: 40%;   /* Ajusta la posición horizontal si es necesario */
+  width: 250px; /* Tamaño deseado para la burbuja */
+  height: auto; /* Mantiene la proporción */
+  z-index: 1; /* Asegura que esté detrás de la barra de navegación */
+}
+
+.burbuja2 img {
+  max-width: 100%; /* Se ajusta al contenedor */
+  height: auto;    /* Mantiene la proporción de la imagen */
+}
+
+.burbujas3 {
+  position: absolute;
+  width: 250px; /* Tamaño deseado para la burbuja */
+  height: auto; /* Mantiene la proporción */
+  top: 200px;
+  z-index: 1;
+}
+
+.burbujas3 img {
+  max-width: 100%; /* Se ajusta al contenedor */
+  height: auto;    /* Mantiene la proporción de la imagen */
+}
+
+.burbujas4 {
+  position: absolute;
+  width: 400px; /* Tamaño deseado para la burbuja */
+  height: auto; /* Mantiene la proporción */
+  top: 390px;
+  right: 10%;
+  z-index: 1;
+}
+
+.burbujas4 img {
+  max-width: 100%; /* Se ajusta al contenedor */
+  height: auto;    /* Mantiene la proporción de la imagen */
+}
+
+header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navegacion {
+  width:  1200px;
+  margin: 30px auto;
+  background:white;
+  z-index: 1000;
+  border-radius: 20px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+.navegacion ul{
+  list-style: none;
+
+}
+
+
+.menu > li{
+position: relative ;
+display: inline-block;
+margin: 0 15px;
+}
+.menu > li > a{
+  display: block;
+  padding: 15px 20px;
+  color: black;
+  text-decoration: none;
+  
+
+}
+.menu li a:hover {
+  color: grey;
+  transition: all .3s;/* para que tarde mas en pintarse*/
+
+
+}
+/*submenu1*/
+
+
+.submenu1 {
+  position: absolute;
+  background: white;
+  width: 500px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+}
+
+.submenu1 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+.menu li:hover .submenu1 {
+  display: grid;
+
+}
+
+.submenu2 {
+  position: absolute;
+  background: white;
+  width: 500px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+
+}
+
+.submenu2 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+.menu li:hover .submenu2 {
+  display: grid;
+
+}
+
+.submenu3 {
+  position: absolute;
+  background: white;
+  width: 500px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+
+}
+
+.submenu3 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+.menu li:hover .submenu3 {
+  display: grid;
+
+}
+
+.submenu4 {
+  position: absolute;
+  background: white;
+  width: 500px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+} 
+
+.submenu4 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  
+  text-decoration: none;
+}
+.menu li:hover .submenu4 {
+  display: grid;
+
+}
+
+
+.submenu5 {
+  position: absolute;
+  background: white;
+  width: 500px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+  left: -160px;
+} 
+
+.submenu5 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  
+  text-decoration: none;
+}
+.menu li:hover .submenu5 {
+  display: grid;
+
+}
+
+.submenu6 {
+  position: absolute;
+  background: white;
+  width: 500px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+  left: -340px;
+} 
+
+.submenu6 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  
+  text-decoration: none;
+}
+.menu li:hover .submenu6 {
+  display: grid;
+
+}
+
+
+.cuadrados {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+
+.contenedorIvo{
+  width: 100%;
+  height: 100vh;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center */
+;}
+
+
+.menu-icon {
+  width: 30px; /* Ajusta el tamaño de la imagen */
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 20;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 1001;
+}
+
+.side-menu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-menu a:hover {
+  color: #f1f1f1;
+}
+
+.side-menu .close-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+#sideMenu.open {
+  width: 250px;
+}

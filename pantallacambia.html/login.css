@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Karla', sans-serif;
+    width: 100vw;
+    height: 100vh; /* Cambié a 100vh para que se ajuste al viewport */
+}
+
+.fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Asegura que esté detrás de la navegación */
+}
+
+.fondo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+input[type="text"], button {
+    width: 200px;
+    padding: 10px;           /* Elimina el relleno */
+    margin: 15px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    position: absolute;   /* Usa 'absolute' para controlar la posición */
+    z-index: 1002;
+    background: rgba(255, 255, 255, 0.1); /* Fondo ligeramente translúcido */
+    color: white;               /* Color del texto */
+    position: absolute;         /* Ajusta la posición relativa para usar con margen */
+    box-sizing: border-box;      /* Asegura que el padding no afecte el ancho total */
+}
+
+input[type="text"]::placeholder {
+    color: white;               /* Cambia el color del placeholder a blanco */
+    opacity: 0.7;               /* Un poco más transparente */
+}
+
+/* Posicionamiento individual de los elementos */
+#username {
+    top: 150px;
+    left: 475px;
+    padding: 0;
+    width: 400px;
+    height: 60px;
+
+}
+
+#password {
+    top: 280px;
+    left: 475px;
+    padding: 0;
+    width: 400px;
+    height: 60px;
+
+}
+
+#button {
+    top: 380px;
+    left: 525px;
+    padding: 0;
+    width: 300px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #C57600;
+    ;
+}
+
+button {
+    width: 200px;
+    padding: 10px;
+    margin: 15px 0;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.cuadrado {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de transparencia */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.fondo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 580px;
+    position: absolute; /* Necesario para centrar en la pantalla */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Mueve el elemento al centro exacto */
+    z-index: 1001;
+}
+
+.fondo2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.linea {
+    z-index: 1003;
+    position: relative;
+    top: 390px;
+    width: 200px; /* Ajusta el ancho según el tamaño que quieras */
+    height: 1px; /* Controla el grosor de la línea */
+    background-color: white; /* Establece el color de la línea */
+    left: 575px;
+}
+.cuenta {
+    z-index: 1003;
+    position: relative;
+    top: 410px;
+    width: 280px; /* Ajusta el ancho según el tamaño que quieras */
+    height: 500px; /* Cambia a 'auto' para que la altura se ajuste al texto */
+    background-color: transparent; /* Establece el fondo transparente si no deseas una línea detrás del texto */
+    color: white; /* Cambia el color de la letra */
+    left: 600px;
+    font-size: 18px;
+    font-weight: 60;
+}
+
+#button1 {
+    top: -60px;
+    left: 525px;
+    padding: 0;
+    width: 300px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #C57600;
+    ;
+}
+
+button {
+    width: 200px;
+    padding: 10px;
+    margin: 15px 0;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1003px;
+}

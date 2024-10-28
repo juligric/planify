@@ -23,10 +23,14 @@ let data2 = [
     {}
 ]
 
-mostrarPlanes(data2){
-
-    urlIMG1 = if (data[0] == "cine"){
-        
+function mostrarPlanes(data2) {
+    let urlIMG1;
+    
+    if (data[0] === "Ir al cine") {
+        urlIMG1 = "cine clima.png"; // Inserta aquí la URL de tu imagen
+    }
+    else if (data[0] === "Visitar un museo") {
+        urlIMG1 = "dot.png";
     }
 
     div1.innerHTML = `<img href="${urlIMG1}">`

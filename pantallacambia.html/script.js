@@ -130,15 +130,26 @@ fetchData("planes", (data) => {
 function mostrarPlanes(data) {
     let urlIMG1;
 
-    if (data[0] === "Ir a la playa") {
-        urlIMG1 = "cine clima.png";
-    } else if (data[0] === "Visitar un museo") {
-        urlIMG1 = "dot.png";
+    let opciones = {
+        "Ir a la playa": "playa.webp",
+        "Hacer un picnic en el parque": "picnic.png",
+        "Salir a hacer senderismo": "palermo.png",
+        "Visitar un jardín botánico": "jardin botanico.png"
+    }
+
+    let textos = ""; 
+    let imagenes = "";
+
+    for (let i = 0; i < 4; i++){
+        urlIMG1 = opciones[data[i]];
+        textos += `<p class="plan-texto">${data[i]}</p>`;  // Agrega clase 'plan-texto' al texto
+        imagenes += `<img src="${urlIMG1}" alt="Imagen del plan" class="plan-imagen">`; // Agrega clase 'plan-imagen' a la imagen
+        console.log(urlIMG1);
     }
 
     const div1 = document.getElementById("div1");
-    const p1 = document.getElementById("p1");
 
-    div1.innerHTML = `<img src="${urlIMG1}" alt="Imagen del plan">`;
-    p1.innerHTML = `<p>${data[0]}</p>`;
+    div1.innerHTML = imagenes;
+    const p1 = document.getElementById("p1");
+    p1.innerHTML = textos;
 }

@@ -364,3 +364,66 @@ margin: 0 15px;
 #sideMenu.open {
   width: 250px;
 }
+
+
+/* Estilos para las imágenes */
+.plan-imagen {
+  width: 300px; 
+  height: auto; /* Mantiene la proporción */
+  margin: 10px; 
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Estilos para los textos */
+.plan-texto {
+  font-size: 16px;
+  color: #333;
+  text-align: center; /* Centrar el texto */
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+
+#div1, #p1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Divide en columnas automáticamente */
+  gap: 20px; /* Espacio entre elementos */
+  padding: 20px;
+  justify-items: center; /* Centra cada elemento en la celda */
+  position: relative;
+}
+/* Contenedor general para organizar las imágenes y los textos en una grilla */
+#div1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta el número de columnas automáticamente */
+  gap: 20px; /* Espacio entre cada tarjeta */
+  padding: 20px;
+  justify-items: center; /* Centra las tarjetas en cada celda */
+}
+
+/* Fondo gris para cada imagen y texto */
+#div1 img {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 150px; /* Ajusta la altura de las imágenes */
+  object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin deformarse */
+  border-radius: 8px 8px 0 0; /* Bordes superiores redondeados */
+}
+
+/* Contenedor para cada conjunto de imagen y texto */
+.plan-item {
+  background-color: #e0e0e0; /* Color de fondo gris */
+  border-radius: 12px; /* Bordes redondeados */
+  padding: 10px; /* Espacio interno */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+  max-width: 200px; /* Ancho máximo para mantener los elementos uniformes */
+  text-align: center; /* Centra el texto */
+}
+
+/* Estilos para los textos */
+#p1 p {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px; /* Espacio entre imagen y texto */
+  margin-bottom: 0;
+}

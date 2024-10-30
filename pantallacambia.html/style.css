@@ -42,11 +42,7 @@ html, body {
   
 }
 
-.hero{
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
+
 
 .planify {
   position: absolute;
@@ -372,6 +368,7 @@ margin: 0 15px;
   height: 150px; /* Establece una altura fija para las imágenes */
   object-fit: cover; /* Corta la imagen para que llene el contenedor sin distorsionarse */
   border-radius: 8px; /* Bordes redondeados opcionales */
+
 }
 
 
@@ -429,7 +426,7 @@ margin: 0 15px;
   padding: 0; /* Eliminar padding */
   align-items: center; /* Centrar verticalmente los elementos */
  left: 100px;
- margin-top: 100px;
+ margin-top: 900px;
 }
 
 .plan-item {
@@ -438,13 +435,14 @@ margin: 0 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #e0e0e0; 
+  background-color:#A3B2B2; 
   border-radius: 12px; 
   padding: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
   text-align: center; 
   max-width: 400px; 
   margin: 0; /* Eliminar márgenes */
+
 }
 
   .form {
@@ -457,12 +455,12 @@ margin: 0 15px;
   .rectangulo {
     width: 450px; /* Ancho del rectángulo */
     height: 500px; /* Altura automática según el contenido */
-    background-color: red; /* Color de fondo del rectángulo */
+    background-color:#A3B2B2; /* Color de fondo del rectángulo */
     border-radius: 12px; /* Bordes redondeados */
     padding: 20px; /* Espacio interno */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
     margin-left: 10px; /* Espacio entre la grilla y el rectángulo */
-    margin-top: 80px; /* Ajusta este valor para bajar el rectángulo */
+    margin-top: 875px; /* Ajusta este valor para bajar el rectángulo */
     margin-right: 100px;
 
     display: flex;
@@ -490,21 +488,33 @@ margin: 0 15px;
 
   }
   .boton {
-    width: 100px;
-    height: 50px;
+    width: 200px; /* Ajusta el ancho */
+    height: 70px; /* Ajusta la altura */
     padding: 10px;
     margin: 15px 0;
-    border: 2px solid white;
     border-radius: 50px;
-    font-size: 16px;
-    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    font-size: 18px;
+    background: #C57600;
     color: white;
     box-sizing: border-box;
-
+    text-align: center;
     display: flex;
     align-items: center;
-    text-align: center; 
-    position: relative; 
+    justify-content: center;
+    position: absolute;
+    bottom: 120px; /* Coloca el botón en la parte inferior del rectángulo */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    text-decoration: none;
+  }
 
-
-}
+  .oscuro {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de transparencia */
+    position: fixed; /* Cambiado de absolute a fixed */
+    top: 0;
+    left: 0;
+    z-index: 0; /* Asegúrate de que tenga un z-index bajo para que otros elementos puedan estar por encima */
+  }

@@ -9,8 +9,9 @@
 html, body {
   font-family: 'Karla', sans-serif;
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    height: 200vh;
+
+
     
 }
 
@@ -24,6 +25,7 @@ html, body {
   font-style: normal;
 }
 .fondoburbujas {
+<<<<<<< HEAD
   position: fixed;
   top: 0;
   left: 0;
@@ -56,14 +58,57 @@ html, body {
     height: auto;    /* Mantiene la proporción de la imagen */
     /*transform: scale(1.5); /* Aumenta el tamaño en 1.5 veces */
 
+=======
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Asegura que esté detrás de la navegación */
+
+}
+
+.fondoburbujas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+  
+}
+
+.hero{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.planify {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra la imagen en ambos ejes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index:  1; /* Asegura que esté encima de otros elementos si es necesario */
+}
+
+.planify img {
+  max-width: 70%; /* Asegura que la imagen no se salga del contenedor */
+  height: auto;    /* Mantiene la proporción de la imagen */
+>>>>>>> 1d3ed60c21db7b2ce24baa0b5efe1c359def415b
 }
 
 .burbuja1 {
   position: absolute;
- top: px;
-  right: 0%;   /* Ajusta la posición horizontal si es necesario */
+  top: 20px;  /* Ajusta la posición vertical si es necesario */
+  right: 0;   /* Ajusta la posición horizontal si es necesario */
   width: 250px; /* Tamaño deseado para la burbuja */
+<<<<<<< HEAD
   height: auto; /* Mantiene la proporción */
+=======
+  height: 200px; /* Altura fija para habilitar el scroll */
+>>>>>>> 1d3ed60c21db7b2ce24baa0b5efe1c359def415b
   z-index: 1;
 }
 
@@ -71,13 +116,18 @@ html, body {
   max-width: 100%; /* Se ajusta al contenedor */
   height: auto;    /* Mantiene la proporción de la imagen */
 }
+
 .burbuja2 {
   position: absolute;
-  margin-bottom: 40px;  /* Ajusta la posición vertical si es necesario */
+  top: 0%; /* Sube la burbuja 2 más arriba en la pantalla */
   right: 40%;   /* Ajusta la posición horizontal si es necesario */
   width: 250px; /* Tamaño deseado para la burbuja */
   height: auto; /* Mantiene la proporción */
+<<<<<<< HEAD
   z-index: 1;
+=======
+  z-index: 1; /* Asegura que esté detrás de la barra de navegación */
+>>>>>>> 1d3ed60c21db7b2ce24baa0b5efe1c359def415b
 }
 
 .burbuja2 img {
@@ -102,7 +152,7 @@ html, body {
   position: absolute;
   width: 400px; /* Tamaño deseado para la burbuja */
   height: auto; /* Mantiene la proporción */
-  top: 370px;
+  top: 390px;
   right: 10%;
   z-index: 1;
 }
@@ -112,16 +162,20 @@ html, body {
   height: auto;    /* Mantiene la proporción de la imagen */
 }
 
-
+header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 .navegacion {
   position:fixed;
   width:  1200px;
   margin: 30px auto;
   background:white;
-  z-index: 100;
+  z-index: 1000;
   border-radius: 20px;
-  position: relative;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,6 +187,8 @@ html, body {
   list-style: none;
 
 }
+
+
 .menu > li{
 position: relative ;
 display: inline-block;
@@ -143,6 +199,7 @@ margin: 0 15px;
   padding: 15px 20px;
   color: black;
   text-decoration: none;
+  
 
 }
 .menu li a:hover {
@@ -152,12 +209,18 @@ margin: 0 15px;
 
 }
 /*submenu1*/
+
+
 .submenu1 {
   position: absolute;
   background: white;
-  width: 130%;
+  width: 500px;
   display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
 }
+
 .submenu1 li a {
   display: block;
   padding: 15px;
@@ -165,16 +228,21 @@ margin: 0 15px;
   text-decoration: none;
 }
 .menu li:hover .submenu1 {
-  display: block;
+  display: grid;
 
 }
 
 .submenu2 {
   position: absolute;
   background: white;
-  width: 130%;
+  width: 500px;
   display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+
 }
+
 .submenu2 li a {
   display: block;
   padding: 15px;
@@ -182,16 +250,21 @@ margin: 0 15px;
   text-decoration: none;
 }
 .menu li:hover .submenu2 {
-  display: block;
+  display: grid;
 
 }
 
 .submenu3 {
   position: absolute;
-  background:white;
-  width: 130%;
+  background: white;
+  width: 500px;
   display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+
 }
+
 .submenu3 li a {
   display: block;
   padding: 15px;
@@ -199,17 +272,20 @@ margin: 0 15px;
   text-decoration: none;
 }
 .menu li:hover .submenu3 {
-  display: block;
+  display: grid;
 
 }
-
 
 .submenu4 {
   position: absolute;
   background: white;
-  width: 130%;
+  width: 500px;
   display: none;
-}
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+} 
+
 .submenu4 li a {
   display: block;
   padding: 15px;
@@ -218,39 +294,54 @@ margin: 0 15px;
   text-decoration: none;
 }
 .menu li:hover .submenu4 {
-  display: block;
+  display: grid;
 
 }
+
 
 .submenu5 {
   position: absolute;
   background: white;
-  width: 130%;
+  width: 500px;
   display: none;
-}
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+  left: -160px;
+} 
+
 .submenu5 li a {
   display: block;
   padding: 15px;
   color: black;
+  
   text-decoration: none;
 }
 .menu li:hover .submenu5 {
-  display: block;
+  display: grid;
+
 }
 
 .submenu6 {
   position: absolute;
   background: white;
-  width: 130%;
+  width: 500px;
   display: none;
-}
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+  left: -340px;
+} 
+
 .submenu6 li a {
   display: block;
   padding: 15px;
   color: black;
+  
   text-decoration: none;
 }
 .menu li:hover .submenu6 {
+<<<<<<< HEAD
   display: block;
 }
 
@@ -323,4 +414,27 @@ margin: 0 15px;
   width: 100%;
   height: 80vh;
   z-index: 100;
+=======
+  display: grid;
+
+}
+
+
+.cuadrados {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+
+.contenedorIvo{
+  width: 100%;
+  height: 100vh;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center 
+;}
+*/
+>>>>>>> 1d3ed60c21db7b2ce24baa0b5efe1c359def415b
 }

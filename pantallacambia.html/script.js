@@ -128,28 +128,32 @@ fetchData("planes", (data) => {
 });
 
 function mostrarPlanes(data) {
-    let urlIMG1;
-
     let opciones = {
-        "Ir a la playa": "playa.webp",
+        "Ir a la playa": "playa.webp",  
         "Hacer un picnic en el parque": "picnic.png",
         "Salir a hacer senderismo": "palermo.png",
-        "Visitar un jardín botánico": "jardin botanico.png"
+        "Visitar un jardín botánico": "jardin botanico.png",
+        "Ir a caminar por un parque": "picnic.png",
+        "Visitar una galería de arte":  "museo.png",
+        "Ir a una biblioteca": "libros.png",
+        "Disfrutar de una clase de yoga en interiores" : "yoga.png"
+        
+
+
+    };  
+    
+    let contenido = "";
+    
+    for (let i = 0; i < 4; i++) {
+        let urlIMG1 = opciones[data[i]];
+        contenido += `
+            <div class="plan-item">
+                <img src="${urlIMG1}" alt="Imagen del plan" class="plan-imagen">  <!-- Clase 'plan-imagen' -->
+                <p class="plan-texto">${data[i]}</p>  <!-- Clase 'plan-texto' -->
+            </div>
+        `;
     }
-
-    let textos = ""; 
-    let imagenes = "";
-
-    for (let i = 0; i < 4; i++){
-        urlIMG1 = opciones[data[i]];
-        textos += `<p class="plan-texto">${data[i]}</p>`;  // Agrega clase 'plan-texto' al texto
-        imagenes += `<img src="${urlIMG1}" alt="Imagen del plan" class="plan-imagen">`; // Agrega clase 'plan-imagen' a la imagen
-        console.log(urlIMG1);
-    }
-
-    const div1 = document.getElementById("div1");
-
-    div1.innerHTML = imagenes;
-    const p1 = document.getElementById("p1");
-    p1.innerHTML = textos;
+    
+    const div1 = document.getElementById("grid-container");
+    div1.innerHTML = contenido;
 }

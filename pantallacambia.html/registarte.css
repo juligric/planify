@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Karla', sans-serif;
+    width: 100vw;
+    height: 100vh; /* Cambié a 100vh para que se ajuste al viewport */
+}
+
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 800
+
+.karla-<uniquifier> {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Asegura que esté detrás de la navegación */
+}
+
+.fondo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+input[type="text"], button {
+    width: 200px;
+    padding: 10px;           /* Elimina el relleno */
+    margin: 15px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    position: absolute;   /* Usa 'absolute' para controlar la posición */
+    z-index: 1002;
+    background: rgba(255, 255, 255, 0.1); /* Fondo ligeramente translúcido */
+    color: white;               /* Color del texto */       /* Ajusta la posición relativa para usar con margen */
+    box-sizing: border-box;      /* Asegura que el padding no afecte el ancho total */
+    text-indent: 10px;
+}
+
+input[type="text"]::placeholder {
+    color: white;               /* Cambia el color del placeholder a blanco */
+    opacity: 0.7;               /* Un poco más transparente */
+}
+.texto {
+    color: white;  /* Cambia el color del texto */
+    font-size: 30px; /* Tamaño del texto */
+    position: relative; /* Posición absoluta para poder ajustar */
+    top: 180px; /* Ajusta la posición según sea necesario */
+    left: 625px; /* Debe alinearse con el input de username */
+    z-index: 1002;  /* Asegúrate de que esté por encima de otros elementos */
+    width: 200px;
+}
+
+/* Posicionamiento individual de los elementos */
+#username {
+    top: 250px;
+    left: 520px;
+    padding: 0;
+    width: 400px;
+    height: 60px;
+
+}
+
+#password {
+    top: 360px;
+    left: 520px;
+    padding: 0;
+    width: 400px;
+    height: 60px;
+
+}
+
+#check {
+    top: 470px;
+    left: 520px;
+    padding: 0;
+    width: 400px;
+    height: 60px
+}
+
+
+
+.cuadrado {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de transparencia */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.fondo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 580px;
+    position: absolute; /* Necesario para centrar en la pantalla */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Mueve el elemento al centro exacto */
+    z-index: 1001;
+}
+
+.fondo2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+#button1 {
+    display: flex; /* Utilizamos flexbox para centrar el contenido */
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: center; /* Alinea horizontalmente el contenido */
+    padding: 0; /* Sin padding adicional, ya que el tamaño se define por width y height */
+    width: 300px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    border-radius: 100px; /* Bordes redondeados */
+    background-color: #C57600; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    z-index: 1002; /* Asegúrate de que esté en un nivel superior si es necesario */
+    position: relative; /* Mantén la posición si la necesitas */
+    top: 560px; /* Ajusta según sea necesario */
+    left: 561px; /* Ajusta según sea necesario */
+    border: 2px solid white; /* Borde blanco de 2px */
+    transition: background-color 0.3s;
+}
+
+/* Si necesitas más espacio alrededor del texto */
+#button1 span {
+    display: block; /* Asegúrate de que el span ocupe todo el espacio disponible */
+}
+
+
+#button1:hover {
+    background-color: #B56500; /* Cambia este color al que desees al pasar el mouse */
+}
+
+
+
+
+.flecha {
+    width: 15px; /* Tamaño de la flecha */
+    height: auto; /* Altura automática para mantener proporciones */
+    position: absolute; /* Asegúrate de que sea absoluta */
+    top: 5px; /* Ajusta este valor para mover la flecha más arriba o abajo */
+    left: -130px; /* Ajusta este valor para mover la flecha más a la izquierda o derecha */
+    z-index: 1002; /* Asegúrate de que esté por encima de otros elementos */
+}

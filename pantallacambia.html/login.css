@@ -11,6 +11,17 @@ html, body {
     height: 100vh; /* Cambié a 100vh para que se ajuste al viewport */
 }
 
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 800
+
+.karla-<uniquifier> {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 .fondo {
     position: fixed;
     top: 0;
@@ -37,20 +48,29 @@ input[type="text"], button {
     position: absolute;   /* Usa 'absolute' para controlar la posición */
     z-index: 1002;
     background: rgba(255, 255, 255, 0.1); /* Fondo ligeramente translúcido */
-    color: white;               /* Color del texto */
-    position: absolute;         /* Ajusta la posición relativa para usar con margen */
+    color: white;               /* Color del texto */       /* Ajusta la posición relativa para usar con margen */
     box-sizing: border-box;      /* Asegura que el padding no afecte el ancho total */
+    text-indent: 10px;
 }
 
 input[type="text"]::placeholder {
     color: white;               /* Cambia el color del placeholder a blanco */
     opacity: 0.7;               /* Un poco más transparente */
 }
+.texto {
+    color: white;  /* Cambia el color del texto */
+    font-size: 30px; /* Tamaño del texto */
+    position: relative; /* Posición absoluta para poder ajustar */
+    top: 180px; /* Ajusta la posición según sea necesario */
+    left: 625px; /* Debe alinearse con el input de username */
+    z-index: 1002;  /* Asegúrate de que esté por encima de otros elementos */
+    width: 200px;
+}
 
 /* Posicionamiento individual de los elementos */
 #username {
-    top: 150px;
-    left: 475px;
+    top: 250px;
+    left: 520px;
     padding: 0;
     width: 400px;
     height: 60px;
@@ -58,8 +78,8 @@ input[type="text"]::placeholder {
 }
 
 #password {
-    top: 280px;
-    left: 475px;
+    top: 360px;
+    left: 520px;
     padding: 0;
     width: 400px;
     height: 60px;
@@ -67,8 +87,8 @@ input[type="text"]::placeholder {
 }
 
 #button {
-    top: 380px;
-    left: 525px;
+    top: 420px;
+    left: 560px;
     padding: 0;
     width: 300px;
     height: 50px;
@@ -79,7 +99,7 @@ input[type="text"]::placeholder {
 
 button {
     width: 200px;
-    padding: 10px;
+    padding: 5px;
     margin: 15px 0;
     border: 2px solid white;
     border-radius: 5px;
@@ -122,46 +142,62 @@ button {
 .linea {
     z-index: 1003;
     position: relative;
-    top: 390px;
+    top: 430px;
     width: 200px; /* Ajusta el ancho según el tamaño que quieras */
     height: 1px; /* Controla el grosor de la línea */
     background-color: white; /* Establece el color de la línea */
-    left: 575px;
+    left: 615px;
 }
 .cuenta {
     z-index: 1003;
     position: relative;
-    top: 410px;
+    top: 440px;
     width: 280px; /* Ajusta el ancho según el tamaño que quieras */
-    height: 500px; /* Cambia a 'auto' para que la altura se ajuste al texto */
+    height: 50px; /* Cambia a 'auto' para que la altura se ajuste al texto */
     background-color: transparent; /* Establece el fondo transparente si no deseas una línea detrás del texto */
     color: white; /* Cambia el color de la letra */
-    left: 600px;
+    left: 640px;
     font-size: 18px;
     font-weight: 60;
 }
-
 #button1 {
-    top: -60px;
-    left: 525px;
-    padding: 0;
-    width: 300px;
-    height: 50px;
-    border-radius: 100px;
-    background-color: #C57600;
-    ;
+    display: flex; /* Utilizamos flexbox para centrar el contenido */
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: center; /* Alinea horizontalmente el contenido */
+    padding: 0; /* Sin padding adicional, ya que el tamaño se define por width y height */
+    width: 300px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    border-radius: 100px; /* Bordes redondeados */
+    background-color: #C57600; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    z-index: 1002; /* Asegúrate de que esté en un nivel superior si es necesario */
+    position: relative; /* Mantén la posición si la necesitas */
+    top: 420px; /* Ajusta según sea necesario */
+    left: 561px; /* Ajusta según sea necesario */
+    border: 2px solid white; /* Borde blanco de 2px */
+    transition: background-color 0.3s;
 }
 
-button {
-    width: 200px;
-    padding: 10px;
-    margin: 15px 0;
-    border: 2px solid white;
-    border-radius: 5px;
-    font-size: 16px;
-    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
-    color: white;
-    position: relative;
-    box-sizing: border-box;
-    z-index: 1003px;
+/* Si necesitas más espacio alrededor del texto */
+#button1 span {
+    display: block; /* Asegúrate de que el span ocupe todo el espacio disponible */
+}
+
+
+#button1:hover {
+    background-color: #B56500; /* Cambia este color al que desees al pasar el mouse */
+}
+
+
+
+
+.flecha {
+    width: 15px; /* Tamaño de la flecha */
+    height: auto; /* Altura automática para mantener proporciones */
+    position: absolute; /* Asegúrate de que sea absoluta */
+    top: 5px; /* Ajusta este valor para mover la flecha más arriba o abajo */
+    left: -130px; /* Ajusta este valor para mover la flecha más a la izquierda o derecha */
+    z-index: 1002; /* Asegúrate de que esté por encima de otros elementos */
 }

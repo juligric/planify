@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Karla', sans-serif;
+    width: 100vw;
+    height: 200vh;
+    background-color: #EFEAE4;
+
+
+    
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 800
+
+.karla-<uniquifier> {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+
+header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navegacion {
+  width:  1200px;
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 1000;
+  border-radius: 20px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 130px;
+
+
+
+}
+.navegacion ul{
+  list-style: none;
+
+}
+
+
+.menu > li{
+position: relative ;
+display: inline-block;
+margin: 0 15px;
+}
+.menu > li > a{
+  display: block;
+  padding: 15px 20px;
+  color: black;
+  text-decoration: none;
+  
+
+}
+.menu li a:hover {
+  color: grey;
+  transition: all .3s;/* para que tarde mas en pintarse*/
+
+
+}
+/*submenu1*/
+
+
+.submenu1 {
+  position: absolute;
+  background: white;
+  width: 500px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+}
+
+.submenu1 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+.menu li:hover .submenu1 {
+  display: grid;
+
+}
+
+.submenu2 {
+  position: absolute;
+  background: white;
+  width: 500px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+
+}
+
+.submenu2 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+.menu li:hover .submenu2 {
+  display: grid;
+
+}
+
+.submenu3 {
+  position: absolute;
+  background: white;
+  width: 500px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+
+}
+
+.submenu3 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+.menu li:hover .submenu3 {
+  display: grid;
+
+}
+
+.submenu4 {
+  position: absolute;
+  background: white;
+  width: 500px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+} 
+
+.submenu4 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  
+  text-decoration: none;
+}
+.menu li:hover .submenu4 {
+  display: grid;
+
+}
+
+
+.submenu5 {
+  position: absolute;
+  background: white;
+  width: 500px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+  left: -160px;
+} 
+
+.submenu5 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  
+  text-decoration: none;
+}
+.menu li:hover .submenu5 {
+  display: grid;
+
+}
+
+.submenu6 {
+  position: absolute;
+  background: white;
+  width: 500px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+  left: -340px;
+} 
+
+.submenu6 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  
+  text-decoration: none;
+}
+.menu li:hover .submenu6 {
+  display: grid;
+
+}
+
+
+  
+  
+ .info-final {
+  position: relative;
+    width: 1445px;
+    height: 500px;
+}
+
+.info-finalt {
+    width: 1400px;
+    margin-top: 0px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.estrellas {
+    width: 350x;
+    height: 35px;
+    margin-left: 605px;
+}
+
+
+.site {
+  width: 100px;
+  height: 2px;
+}
+
+.site img {
+  width: 150px;
+ height: auto;
+ margin-left: 30px;
+ margin-top: 40px;
+}
+
+.heart-btn {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+ 
+}
+
+/* Parte de abajo del corazón */
+.heart-shape {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: gray; /* Color inicial del corazón */
+  transform: rotate(-45deg);
+  top: -18px;
+  left: 25px;
+  transition: background-color 0.3s;
+}
+
+/* Círculos para crear la parte superior del corazón */
+.heart-shape::before,
+.heart-shape::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: gray; /* Color inicial del corazón */
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+/* Círculo izquierdo */
+.heart-shape::before {
+  top: -18px;
+  right: 0px;
+}
+
+/* Círculo derecho */
+.heart-shape::after {
+  top: 0;
+  left: 18px;
+}
+
+/* Cambiar color al hacer clic */
+.heart-btn.active .heart-shape,
+.heart-btn.active .heart-shape::before,
+.heart-btn.active .heart-shape::after {
+  background-color: red;
+}
+
+.titulo {
+  position: absolute; /* Permite que el texto se coloque sobre la imagen */
+  width: 1000px; 
+  height: 100px; 
+  top: 0; /* Ajusta la posición vertical (0 para estar en la parte superior) */
+  left: 15px; /* Ajusta la posición horizontal (0 para estar a la izquierda) */
+  z-index: 1; /* Asegúrate de que esté por encima de la imagen */
+  margin-top: 340px; /* Margen superior */
+  font-size: 120px;
+color: white;
+}

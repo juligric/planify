@@ -44,7 +44,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 130px;
+  margin-left: 100px;
 
 
 
@@ -216,21 +216,21 @@ margin: 0 15px;
   
  .info-final {
   position: relative;
-    width: 1445px;
-    height: 500px;
+    width: 1375px;
+    height: 400px;
 }
 
 .info-finalt {
-    width: 1400px;
+    width: 1300px;
     margin-top: 0px;
     margin-left: 30px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .estrellas {
-    width: 350x;
+    width: 300x;
     height: 35px;
-    margin-left: 605px;
+    margin-left: 560px;
 }
 
 
@@ -240,16 +240,16 @@ margin: 0 15px;
 }
 
 .site img {
-  width: 150px;
+  width: 100px;
  height: auto;
  margin-left: 30px;
- margin-top: 40px;
+ margin-top: 30px;
 }
 
 .heart-btn {
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 20px;
+  height: 20px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -260,8 +260,8 @@ margin: 0 15px;
 /* Parte de abajo del corazón */
 .heart-shape {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background-color: gray; /* Color inicial del corazón */
   transform: rotate(-45deg);
   top: -18px;
@@ -274,8 +274,8 @@ margin: 0 15px;
 .heart-shape::after {
   content: "";
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background-color: gray; /* Color inicial del corazón */
   border-radius: 50%;
   transition: background-color 0.3s;
@@ -283,14 +283,14 @@ margin: 0 15px;
 
 /* Círculo izquierdo */
 .heart-shape::before {
-  top: -18px;
+  top: -10px;
   right: 0px;
 }
 
 /* Círculo derecho */
 .heart-shape::after {
   top: 0;
-  left: 18px;
+  left: 10px;
 }
 
 /* Cambiar color al hacer clic */
@@ -304,10 +304,10 @@ margin: 0 15px;
   position: absolute; /* Permite que el texto se coloque sobre la imagen */
   width: 1000px; 
   height: 100px; 
-  top: 0; /* Ajusta la posición vertical (0 para estar en la parte superior) */
+  top: -100px; /* Ajusta la posición vertical (0 para estar en la parte superior) */
   left: 15px; /* Ajusta la posición horizontal (0 para estar a la izquierda) */
   z-index: 1; /* Asegúrate de que esté por encima de la imagen */
   margin-top: 340px; /* Margen superior */
-  font-size: 120px;
+  font-size: 100px;
 color: white;
 }

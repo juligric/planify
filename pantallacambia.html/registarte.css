@@ -61,16 +61,16 @@ input[type="text"]::placeholder {
     color: white;  /* Cambia el color del texto */
     font-size: 30px; /* Tamaño del texto */
     position: relative; /* Posición absoluta para poder ajustar */
-    top: 180px; /* Ajusta la posición según sea necesario */
-    left: 625px; /* Debe alinearse con el input de username */
+    top: 90px; /* Ajusta la posición según sea necesario */
+    left: 600px; /* Debe alinearse con el input de username */
     z-index: 1002;  /* Asegúrate de que esté por encima de otros elementos */
     width: 200px;
 }
 
 /* Posicionamiento individual de los elementos */
 #username {
-    top: 250px;
-    left: 520px;
+    top: 175px;
+    left: 490px;
     padding: 0;
     width: 400px;
     height: 60px;
@@ -78,8 +78,8 @@ input[type="text"]::placeholder {
 }
 
 #password {
-    top: 360px;
-    left: 520px;
+    top: 280px;
+    left: 490px;
     padding: 0;
     width: 400px;
     height: 60px;
@@ -87,8 +87,8 @@ input[type="text"]::placeholder {
 }
 
 #check {
-    top: 470px;
-    left: 520px;
+    top: 385px;
+    left: 490px;
     padding: 0;
     width: 400px;
     height: 60px
@@ -141,8 +141,8 @@ input[type="text"]::placeholder {
     box-sizing: border-box; /* Incluye el padding en el ancho total */
     z-index: 1002; /* Asegúrate de que esté en un nivel superior si es necesario */
     position: relative; /* Mantén la posición si la necesitas */
-    top: 560px; /* Ajusta según sea necesario */
-    left: 561px; /* Ajusta según sea necesario */
+    top: 450px; /* Ajusta según sea necesario */
+    left: 540px; /* Ajusta según sea necesario */
     border: 2px solid white; /* Borde blanco de 2px */
     transition: background-color 0.3s;
 }
@@ -164,7 +164,7 @@ input[type="text"]::placeholder {
     width: 15px; /* Tamaño de la flecha */
     height: auto; /* Altura automática para mantener proporciones */
     position: absolute; /* Asegúrate de que sea absoluta */
-    top: 5px; /* Ajusta este valor para mover la flecha más arriba o abajo */
-    left: -130px; /* Ajusta este valor para mover la flecha más a la izquierda o derecha */
+    top: 9px; /* Ajusta este valor para mover la flecha más arriba o abajo */
+    left: -140px; /* Ajusta este valor para mover la flecha más a la izquierda o derecha */
     z-index: 1002; /* Asegúrate de que esté por encima de otros elementos */
 }

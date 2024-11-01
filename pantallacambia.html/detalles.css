@@ -203,7 +203,16 @@
       column-gap: 170px; /* Espacio horizontal entre las columnas */
       row-gap: 80px; /* Espacio vertical entre las filas */
       margin-top: 120px; /* Baja la grilla 120px */
+
   }
+
+  .grid-item:hover {
+    transform: scale(1.2);
+    background-color: #D9D9D9 ;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        border: 2px solid #ffffff;
+
+}
 
   .grid-item {
       background-color: #D9D9D9;
@@ -216,7 +225,15 @@
       border-radius: 10px;
       padding: 10px;
       box-sizing: border-box;
+      text-decoration: none;
+      transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
   }
+
+  .grid-item a {
+    text-decoration: none;
+    color: inherit; /* Mantiene el color del texto del contenedor */
+}
+
 
   .imagen-container {
       display: flex; /* Usar flexbox para centrar la imagen */
@@ -233,6 +250,7 @@
       margin: 0; /* Quita el margen por defecto del párrafo */
       text-align: center; /* Centra el texto horizontalmente */
       margin-top: -5px;
+      text-decoration: none;
   }
 
 

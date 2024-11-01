@@ -1,24 +1,29 @@
 let username = document.getElementById("username")
 let password = document.getElementById("password")
 let button = document.getElementById("button")
+
   
 button.addEventListener("click",async()=>{
-   await postData("login",({username: username.value,password:password.value}),(data)=>{
-    if (data === true) {
-            
+   
+    postData("login",{email: username.value,password:password.value},async(data)=>{
+        console.log(data.msg)
+    if (data.valid) {
+        
+       
+        localStorage.setItem("username",username.value)
+        localStorage.setItem("favoritos", data.favoritos)
+        location.href = "./normal.html"
+    
     }
 })
 })
 
 
-fetchData("planes",({ubicacion...}),(data)=>{
-    mostrarPlanes(data)
-            
-    }
+
 
 let data2 = [
     {"img":"imgs/foto1", "descripcion": "cumple de ari"},
-    {,},
+    {},
     {},
     {}
 ]
@@ -38,5 +43,4 @@ function mostrarPlanes(data2) {
 }
 
 
-    x.img
-    x.descripcion
+   

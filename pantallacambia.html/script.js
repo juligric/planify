@@ -1,4 +1,4 @@
-const informacion = {
+ const informacion = {
     "1": [
         { texto: "Parque Tres de febrero", imagen: "image (5).png" },
         { texto: "Jardin japones", imagen: "image.png" },
@@ -122,10 +122,6 @@ function toggleMenu() {
 // Simulación de obtención de datos y despliegue de planes
 
 
-fetchData("planes", (data) => {
-    console.log(data)
-    mostrarPlanes(data);
-});
 
 function mostrarPlanes(data) {
     let opciones = {
@@ -156,4 +152,80 @@ function mostrarPlanes(data) {
     
     const div1 = document.getElementById("grid-container");
     div1.innerHTML = contenido;
+}
+
+
+
+
+
+
+
+let mostrarFavoritos = (favorito)=>{
+
+    for (let index = 0; index < informacion.length; index++) {
+        for (let i = 0; i < informacion[index].length; i++) {
+            if (informacion[index][i].texto === favorito) {
+               // Crear el contenedor principal de la grilla
+const gridItem = document.createElement("div");
+gridItem.classList.add("grid-item");
+
+// Crear el enlace
+const link = document.createElement("a");
+link.href = `final.html?item=${i++}`;
+
+// Crear el contenedor de la imagen
+const imagenContainer = document.createElement("div");
+imagenContainer.classList.add("imagen-container");
+
+// Crear la imagen
+const imagen = document.createElement("img");
+imagen.id = "imagen5";
+imagen.classList.add("imagen");
+imagen.src = ""; // Especifica la URL de la imagen si la tienes
+imagen.alt = `Imagen ${i++}`;
+
+// Añadir la imagen al contenedor de la imagen
+imagenContainer.appendChild(imagen);
+
+// Crear el párrafo de texto
+const texto = document.createElement("p");
+texto.id = "texto5";
+texto.textContent = "Texto inicial " + i++;
+
+// Añadir el contenedor de la imagen y el texto al enlace
+link.appendChild(imagenContainer);
+link.appendChild(texto);
+
+// Añadir el enlace al contenedor principal de la grilla
+gridItem.appendChild(link);
+
+// Insertar el elemento de la grilla en el documento (por ejemplo, en un contenedor con id "grid")
+document.getElementById("sideMenu").appendChild(gridItem);
+
+               
+            }
+            
+        }
+        
+    }
+}
+
+
+let inicio = document.getElementById("inicio")
+postData("recibirFavoritos",{username: localStorage.getItem("username")},(data)=>{
+    localStorage.setItem("favoritos", JSON.stringify(data,null,2))
+})
+if (localStorage.getItem("username")) {
+    if (localStorage.getItem("favoritos")) {
+        inicio.innerText = ""
+        let favoritos = JSON.parse(localStorage.getItem("favoritos"))
+        favoritos.forEach(element => {
+            mostrarFavoritos(element)
+        });
+    
+    }else{
+        inicio.innerText = "No se han encontrado favoritos"
+    }
+}else{
+    inicio.innerText = "Iniciar sesión / Registrarse"
 }

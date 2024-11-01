@@ -70,7 +70,7 @@ input[type="text"]::placeholder {
 /* Posicionamiento individual de los elementos */
 #username {
     top: 250px;
-    left: 550px;
+    left: 520px;
     padding: 0;
     width: 400px;
     height: 60px;

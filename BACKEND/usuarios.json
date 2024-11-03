@@ -7,42 +7,8 @@
       {
         "texto": "Alto Parque",
         "imagen": "image (8).png"
-      },
-      {
-        "texto": "Alto Parque",
-        "imagen": "image (8).png"
-      },
-      {
-        "texto": "Alto Parque",
-        "imagen": "image (8).png"
-      },
-      {
-        "texto": "Jardin Botanico",
-        "imagen": "image (7).png"
       }
-    ]
-  },
-  {
-    "username": "Messi",
-    "password": "dsadas",
-    "email": "dajsjdas@",
-    "planes": [
-      {
-        "texto": "Alto Parque",
-        "imagen": "image (8).png"
-      },
-      {
-        "texto": "Alto Parque",
-        "imagen": "image (8).png"
-      },
-      {
-        "texto": "Alto Parque",
-        "imagen": "image (8).png"
-      },
-      {
-        "texto": "Jardin Botanico",
-        "imagen": "image (7).png"
-      }
+    
     ]
   }
 ]

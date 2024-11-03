@@ -135,9 +135,17 @@ function mostrarPlanes(data) {
         "Disfrutar de una clase de yoga en interiores": "yoga.png"
 
 
+<<<<<<< HEAD
+        
+
+
+    };  
+    
+=======
 
     };
 
+>>>>>>> c4fcfc66c0f42a546db7c7fdfa61aae057f9a235
     let contenido = "";
 
     for (let i = 0; i < 4; i++) {

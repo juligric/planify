@@ -8,7 +8,24 @@
         "texto": "Alto Parque",
         "imagen": "image (8).png"
       }
-    
     ]
+  },
+  {
+    "username": "bensagra@gmail.com",
+    "password": "123",
+    "email": "bensagra@gmail.com",
+    "planes": []
+  },
+  {
+    "username": "dajsjdas@gmail.com",
+    "password": "123",
+    "email": "dajsjdas@gmail.com",
+    "planes": []
+  },
+  {
+    "username": "bensagra@gmail.com",
+    "password": "dsadas",
+    "email": "bensagra@gmail.com",
+    "planes": []
   }
 ]

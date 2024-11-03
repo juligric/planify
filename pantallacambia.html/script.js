@@ -169,11 +169,13 @@ let mostrarFavoritos = (favorito) => {
                 console.log("encontrado")
                 // Crear el contenedor principal de la grilla
                 const gridItem = document.createElement("div");
-                gridItem.classList.add("grid-item");
+                gridItem.classList.add("widgetFavoritos");
 
                 // Crear el enlace
                 const link = document.createElement("a");
+
                 link.href = `final.html?item=${i + 1}`;
+                link.classList.add("link");
 
                 // Crear el contenedor de la imagen
                 const imagenContainer = document.createElement("div");

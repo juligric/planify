@@ -43,7 +43,7 @@ function toggleHeart(element) {
         "6": { texto: "Jardin Botanico", imagen: "image (7).png" }
     }
 
-    postData("favoritos", { plan: informacion[1], username: sessionStorage.getItem("username") }, (dataRecibida) => {
+    postData("favoritos", { plan: informacion[item], username: sessionStorage.getItem("username") }, (dataRecibida) => {
         console.log(data)
     })
     element.classList.toggle("active");

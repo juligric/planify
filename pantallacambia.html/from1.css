@@ -1,18 +1,182 @@
-body {
-  font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Estilos para el carrusel */
-.swiper {
-  width: 100%;
-  height: 400px; /* Ajusta la altura según sea necesario */
+html, body {
+    font-family: 'Karla', sans-serif;
+    width: 100vw;
+    height: 100vh; /* Cambié a 100vh para que se ajuste al viewport */
 }
 
-.swiper-slide {
-  display: flex; /* Flexbox para centrar el contenido */
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 800
+
+.karla-<uniquifier> {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+.form-slide {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  z-index: 1003;
+top: 100px;
+}
+
+.form-slide.active {
+  display: block;
+ 
+}
+.opciones {
+  display: flex;
+  flex-direction: column; /* Coloca las opciones en una columna */
+  align-items: center; /* Centra las opciones horizontalmente */
+  justify-content: center; /* Centra las opciones verticalmente */
+  height: 60vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+  padding-top: 50px;
+}
+
+.opciones label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0;
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 2px solid #ccc;
+  width: 400px;
+  margin-top: 10px; /* Espacio más ajustado entre opciones */
+}
+
+.opciones input[type="radio"] {
+  display: none;
+}
+
+.opciones input[type="radio"]:checked + label {
+  background-color: white; /* Cambia el color de fondo a rojo */
+  color: black; /* Cambia el color del texto a blanco (opcional, para mejor contraste) */
+  border-color: rgb(215, 215, 215) /* Cambia el color del borde a rojo */
+}
+
+
+.opciones label:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.opciones label:active {
+  transform: scale(0.98);
+}
+#quiz-container {
+  position: relative;
+  z-index: 1005; /* Más alto que todos los elementos */
+  display: flex;
+  flex-direction: column; /* Para apilar los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+}
+
+#prevBtn, #nextBtn {
+  margin: 10px;
+  padding: 8px 16px;
+  font-size: 24px; /* Aumenta el tamaño para que sea más visible */
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 50%; /* Hace que los botones sean redondos */
+  position: relative; /* Asegura que el z-index funcione */
+  z-index: 1006; /* Más alto que el contenido del quiz */
+  width: 50px; /* Tamaño fijo para los botones */
+  height: 50px; /* Tamaño fijo para los botones */
+  display: flex; /* Usamos flexbox para centrar el icono */
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
-  font-size: 18px; /* Tamaño de fuente */
-  background-color: #C57600; /* Color de fondo de las slides */
-  color: white; /* Color del texto */
+}
+
+#prevBtn {
+  position: absolute; /* Posición absoluta para colocarlo en la esquina superior izquierda */
+  top: 10px; /* Distancia desde la parte superior */
+  left: 10px; /* Distancia desde la izquierda */
+}
+
+#nextBtn {
+  position: absolute; /* Posición absoluta para colocarlo en la esquina superior derecha */
+  top: 10px; /* Distancia desde la parte superior */
+  right: 10px; /* Distancia desde la derecha */
+}
+
+
+.fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Asegura que esté detrás de la navegación */
+}
+
+.fondo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+
+.cuadrado {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de transparencia */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.fondo2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 580px;
+  position: absolute; /* Necesario para centrar en la pantalla */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Mueve el elemento al centro exacto */
+  z-index: 1001;
+
+}
+
+.fondo2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.opciones{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.preguntaf {
+  color: white;
+  font-size: 50px;
 }

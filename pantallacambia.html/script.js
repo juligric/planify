@@ -136,6 +136,9 @@ function mostrarPlanes(data) {
         
 
 
+        
+
+
     };  
     
     let contenido = "";

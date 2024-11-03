@@ -60,6 +60,12 @@ html, body {
   height: auto;    /* Mantiene la proporción de la imagen */
 }
 
+.imagenFavoritos {
+  width: 100px;
+  height: 50px;
+  
+}
+
 .burbuja1 {
   position: absolute;
   top: 20px;  /* Ajusta la posición vertical si es necesario */

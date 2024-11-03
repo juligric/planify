@@ -5,9 +5,11 @@
     "email": "dajsjdas@",
     "planes": [
       {
-        "texto": "Detalles sobre Parque Tres de Febrero"
+        "texto": "Alto Parque",
+        "imagen": "image (8).png"
       },
       {
+<<<<<<< HEAD
         "site": "https://jardinjapones.org.ar/",
         "texto1": " Jardin Japones",
         "texto": "Sumérgete en un rincón de paz y belleza en pleno corazón de la ciudad. El Jardín Japonés es un espacio ideal para desconectar y disfrutar de la naturaleza con delicados paisajes de inspiración japonesa. Pasea entre estanques llenos de coloridos koi, cruza puentes rojos icónicos y explora la armonía de sus jardines cuidadosamente diseñados. Además, encontrarás un centro cultural que ofrece actividades, exposiciones y talleres para conocer más sobre la cultura japonesa. ¡Un lugar perfecto para una experiencia inolvidable!",
@@ -46,6 +48,10 @@
       {
         "texto": "Detalles sobre Parque Tres de Febrero",
         "imagen": "image (5).png"
+=======
+        "texto": "Alto Parque",
+        "imagen": "image (8).png"
+>>>>>>> c4fcfc66c0f42a546db7c7fdfa61aae057f9a235
       }
     ]
   },
@@ -55,9 +61,11 @@
     "email": "dajsjdas@",
     "planes": [
       {
-        "texto": "Detalles sobre Parque Tres de Febrero"
+        "texto": "Alto Parque",
+        "imagen": "image (8).png"
       },
       {
+<<<<<<< HEAD
         "site": "https://jardinjapones.org.ar/",
         "texto1": " Jardin Japones",
         "texto": "Sumérgete en un rincón de paz y belleza en pleno corazón de la ciudad. El Jardín Japonés es un espacio ideal para desconectar y disfrutar de la naturaleza con delicados paisajes de inspiración japonesa. Pasea entre estanques llenos de coloridos koi, cruza puentes rojos icónicos y explora la armonía de sus jardines cuidadosamente diseñados. Además, encontrarás un centro cultural que ofrece actividades, exposiciones y talleres para conocer más sobre la cultura japonesa. ¡Un lugar perfecto para una experiencia inolvidable!",
@@ -96,6 +104,10 @@
       {
         "texto": "Detalles sobre Parque Tres de Febrero",
         "imagen": "image (5).png"
+=======
+        "texto": "Alto Parque",
+        "imagen": "image (8).png"
+>>>>>>> c4fcfc66c0f42a546db7c7fdfa61aae057f9a235
       }
     ]
   }

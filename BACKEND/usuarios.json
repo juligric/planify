@@ -44,5 +44,20 @@
         "imagen": "../images/image.png"
       }
     ]
+  },
+  {
+    "username": "julietatg.9@gmail.com",
+    "password": "jumobe2024",
+    "email": "julietatg.9@gmail.com",
+    "planes": [
+      {
+        "texto": "Jardin japones",
+        "imagen": "../images/image.png"
+      },
+      {
+        "texto": "Jardin japones",
+        "imagen": "../images/image.png"
+      }
+    ]
   }
 ]

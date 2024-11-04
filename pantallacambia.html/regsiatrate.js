@@ -10,6 +10,8 @@ button1.addEventListener("click", () => {
         postData("signup", { username: username.value, password: password.value, email: username.value }, (data) => {
             console.log(data)
             if (data === "Usuario cargado correctamente") {
+                sessionStorage.setItem("username", username.value)
+                sessionStorage.setItem("favoritos", data.favoritos)
                 window.location.href = "./normal.html"
 
             } else {

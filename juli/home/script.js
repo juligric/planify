@@ -17,6 +17,9 @@ for (let i = 1; i < subMenu.length; i++) {
     }
 }
 
+
+
+
 document.getElementById("sideMenuOpen").addEventListener("click", () => {
     toggleMenu();
 })

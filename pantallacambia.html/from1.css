@@ -180,3 +180,18 @@ top: 100px;
   color: white;
   font-size: 50px;
 }
+
+
+#resultado {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  max-width: 80%; /* Limita el ancho máximo para que el texto no se salga */
+  word-wrap: break-word; /* Permite que las palabras largas se dividan y no se desborden */
+  z-index: 1004;
+
+}

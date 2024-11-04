@@ -69,18 +69,20 @@ function recommendPlans(weatherDescription) {
 
   console.log('Planes sugeridos según el clima:');
   plans.forEach(plan => console.log(plan));
+  
 }
 
 
-function planes (){
-    return (plans);
+export async function planes (){
+   console.log("Devuelo" + plans)
+    return plans
 }
-onEvent ("planes", planes)
 
 
 
-// Realizar la solicitud a la API de IP
-http.get({'host': 'api.ipify.org', 'port': 80, 'path': '/'}, function(resp) {
+ 
+  // Realizar la solicitud a la API de IP
+ http.get({'host': 'api.ipify.org', 'port': 80, 'path': '/'}, function(resp) {
   resp.on('data', function(ip) {
     ip = ip.toString();  // Convierte el buffer a string
     console.log('IP:', ip);
@@ -102,12 +104,10 @@ http.get({'host': 'api.ipify.org', 'port': 80, 'path': '/'}, function(resp) {
 
         // Recomendar planes según el clima
         if (weatherDescription) {
+          console.log("Entre")
           recommendPlans(weatherDescription);
         }
       });
     });
   });
 });
-
-
-startServer()

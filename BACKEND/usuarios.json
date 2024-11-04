@@ -57,6 +57,52 @@
       {
         "texto": "Jardin japones",
         "imagen": "../images/image.png"
+      },
+      {
+        "texto": "Jardin japones",
+        "imagen": "../images/image.png"
+      },
+      {
+        "texto": "Ecoparque",
+        "imagen": "../images/image (6).png"
+      }
+    ]
+  },
+  {
+    "username": "julietatg.9@gmail.com",
+    "password": "jumobe2024",
+    "email": "julietatg.9@gmail.com",
+    "planes": [
+      {
+        "texto": "Jardin japones",
+        "imagen": "../images/image.png"
+      },
+      {
+        "texto": "Ecoparque",
+        "imagen": "../images/image (6).png"
+      }
+    ]
+  },
+  {
+    "username": "12330912312@",
+    "password": "bebnn",
+    "email": "12330912312@",
+    "planes": [
+      {
+        "texto": "Jardin japones",
+        "imagen": "../images/image.png"
+      },
+      {
+        "texto": "Barrancas de Belgrano",
+        "imagen": "../images/image (4).png"
+      },
+      {
+        "texto": "Jardin japones",
+        "imagen": "../images/image.png"
+      },
+      {
+        "texto": "Jardin japones",
+        "imagen": "../images/image.png"
       }
     ]
   }

@@ -1,7 +1,7 @@
 import { subMenu, informacion } from "../repository.js";
 
-for (let i = 1; i < subMenu.length; i++) {
-    let menu = document.getElementById(`submenu${i}`)
+for (let i = 0; i < subMenu.length; i++) {
+    let menu = document.getElementById(`submenu${i+1}`)
     for (let index = 1; index < subMenu[i].length; index++) {
         let li = document.createElement("li")
         let a = document.createElement("a")
@@ -35,36 +35,36 @@ function toggleMenu() {
 // Simulación de obtención de datos y despliegue de planes
 
 
-
 function mostrarPlanes(data) {
     let opciones = {
-        "Ir a la playa": "playa.webp",
-        "Hacer un picnic en el parque": "picnic.png",
-        "Salir a hacer senderismo": "palermo.png",
-        "Visitar un jardín botánico": "jardin botanico.png",
-        "Ir a caminar por un parque": "picnic.png",
-        "Visitar una galería de arte": "museo.png",
-        "Ir a una biblioteca": "libros.png",
-        "Disfrutar de una clase de yoga en interiores": "yoga.png"
-
-
+        "Ir a la playa": "../images/playa.webp",
+        "Hacer un picnic en el parque": "../images/picnic.png",
+        "Salir a hacer senderismo": "../images/palermo.png",
+        "Visitar un jardín botánico": "../images/jardin_botanico.png",
+        "Ir a caminar por un parque": "../images/parque.png",
+        "Visitar una galería de arte": "../images/museo.png",
+        "Ir a una biblioteca": "../images/libros.png",
+        "Disfrutar de una clase de yoga en interiores": "../images/yoga.png"
     };
     let contenido = "";
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < data.length; i++) {
         let urlIMG1 = opciones[data[i]];
-        contenido += `
-                < div class="plan-item" >
-                    <img src="${urlIMG1}" alt="Imagen del plan" class="plan-imagen">  <!-- Clase 'plan-imagen' -->
-                        <p class="plan-texto">${data[i]}</p>  <!-- Clase 'plan-texto' -->
-                    </div>
+        if (urlIMG1) {
+            contenido += `
+                <div class="plan-item">
+                    <img src="${urlIMG1}" alt="Imagen del plan" class="plan-imagen">
+                    <p class="plan-texto">${data[i]}</p>
+                </div>
             `;
+        }
     }
 
     const div1 = document.getElementById("grid-container");
-    div1.innerHTML = contenido;
+    if (div1) {
+        div1.innerHTML = contenido;
+    }
 }
-
 
 
 
@@ -73,10 +73,9 @@ function mostrarPlanes(data) {
 
 let mostrarFavoritos = (favorito) => {
     console.log(favorito)
-    for (let index = 0; index < informacion.length; index++) {
-        for (let i = 0; i < informacion[index].length; i++) {
-            console.log(informacion[index][i].texto)
-            if (informacion[index][i].texto === favorito.texto) {
+        for (let i = 0; i < informacion[0].length; i++) {
+            console.log(informacion[0][i].texto)
+            if (informacion[0][i].texto === favorito.texto) {
                 console.log("encontrado")
                 // Crear el contenedor principal de la grilla
                 const gridItem = document.createElement("div");
@@ -121,7 +120,7 @@ let mostrarFavoritos = (favorito) => {
 
             }
 
-        }
+        
 
     }
 }
@@ -151,3 +150,12 @@ document.getElementById("messi").addEventListener("click", () => {
     toggleMenu();
 }
 )
+
+
+
+
+fetchData("planes", (data)=>{
+    console.log("HOlaa")
+    console.log(data)
+    mostrarPlanes(data)
+})

@@ -2,8 +2,8 @@
 let data = ""
 import { subMenu, } from "../repository.js";
 
-for (let i = 1; i < subMenu.length; i++) {
-    let menu = document.getElementById(`submenu${i}`)
+for (let i = 0; i < subMenu.length; i++) {
+    let menu = document.getElementById(`submenu${i+1}`)
     for (let index = 1; index < subMenu[i].length; index++) {
         let li = document.createElement("li")
         let a = document.createElement("a")

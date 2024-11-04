@@ -12,7 +12,7 @@ button.addEventListener("click", async () => {
 
             sessionStorage.setItem("username", username.value)
             sessionStorage.setItem("favoritos", data.favoritos)
-            location.href = "./normal.html"
+            location.href = "../home/normal.html"
 
         }
     })

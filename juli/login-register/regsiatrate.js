@@ -12,7 +12,7 @@ button1.addEventListener("click", () => {
             if (data === "Usuario cargado correctamente") {
                 sessionStorage.setItem("username", username.value)
                 sessionStorage.setItem("favoritos", data.favoritos)
-                window.location.href = "./normal.html"
+                window.location.href = "../home/normal.html"
 
             } else {
                 alert("Usuario ya registrado")

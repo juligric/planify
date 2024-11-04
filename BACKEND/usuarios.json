@@ -27,5 +27,22 @@
     "password": "123",
     "email": "messi123",
     "planes": []
+  },
+  {
+    "username": "dsdas",
+    "password": "123",
+    "email": "dsdas",
+    "planes": []
+  },
+  {
+    "username": "asd",
+    "password": "123",
+    "email": "asd",
+    "planes": [
+      {
+        "texto": "Jardin japones",
+        "imagen": "../images/image.png"
+      }
+    ]
   }
 ]

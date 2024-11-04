@@ -1,64 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="mail.css">
-<title> Email </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mail.css">
+  <title>Email</title>
 </head>
-
 <body> 
 
+  <!-- Fondo de imagen -->
   <div class="fondo">
     <img src="OLAS.png" alt="fondo">
   </div>
-  
 
-  <form id="form">
-    <div class="field">
-      <label for="name">Nombre: </label>
-      <input type="text" name="name" id="name">
-    </div>
-    <div class="field">
-      <label for="last">Apellido: </label>
-      <input type="text" name="last" id="last">
-    </div>
-    <div class="field">
-      <label for="phone">Telefono: </label>
-      <input type="text" name="phone" id="phone">
-    </div>
-    <div class="field">
-      <label for="email">Email: </label>
-      <input type="text" name="email" id="email">
-    </div>
-    <div class="field">
-      <label for="message">Mensaje: </label>
-      <input type="text" name="message" id="message">
-    </div>
-    <div class="field">
-      <label for="reply_to">reply_to</label>
-      <input type="text" name="reply_to" id="reply_to">
-    </div>
-  
-    <input type="submit" id="button" value="Send Email" >
-  </form>
-   
+  <!-- Formulario -->
+  <div class="form-container">
+    <form id="form">
+      <div class="field">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name">
+      </div>
+      <div class="field">
+        <label for="last">Apellido:</label>
+        <input type="text" name="last" id="last">
+      </div>
+      <div class="field">
+        <label for="phone">Teléfono:</label>
+        <input type="text" name="phone" id="phone">
+      </div>
+      <div class="field">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email">
+      </div>
+      <div class="field">
+        <label for="message">Mensaje:</label>
+        <input type="text" name="message" id="message">
+      </div>
+      <div class="field">
+        <label for="reply_to">Reply to:</label>
+        <input type="text" name="reply_to" id="reply_to">
+      </div>
+      <input type="submit" id="button" value="Send Email">
+    </form>
+  </div>
 
+  <!-- Imagen borrosa en el fondo -->
+  <div class="fondo2">
+    <img src="blurr.png" alt="fondo2">
+  </div>
 
-
-<div class="fondo2">
-  <img src="blurr.png" alt="fondo2">
-</div>
-
-<div class="cuadrado "></div>
+  <!-- Fondo semitransparente -->
+  <div class="cuadrado"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
- 
-  <!-- Enlazar tu archivo JavaScript personalizado -->
   <script src="mail.js"></script>
 </body>
-
-
 </html>

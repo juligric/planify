@@ -107,15 +107,9 @@
     ]
   },
   {
-<<<<<<< HEAD
-    "username": "ZA",
-    "password": "ZA",
-    "email": "ZA",
-=======
     "username": "jose",
     "password": "123",
     "email": "jose",
->>>>>>> 227fb67b6f00b3223964bcc4984be72af89182f0
     "planes": [
       {
         "texto": "Jardin japones",

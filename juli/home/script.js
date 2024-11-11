@@ -40,7 +40,7 @@ function mostrarPlanes(data) {
         "Ir a la playa": "../images/playa.webp",
         "Hacer un picnic en el parque": "../images/picnic.png",
         "Salir a hacer senderismo": "../images/palermo.png",
-        "Visitar un jardín botánico": "../images/jardin_botanico.png",
+        "Visitar un jardín botánico": "../images/jardin botanico.png",
         "Ir a caminar por un parque": "../images/parque.png",
         "Visitar una galería de arte": "../images/museo.png",
         "Ir a una biblioteca": "../images/libros.png",

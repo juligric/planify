@@ -79,7 +79,6 @@ export const informacion = [
     ],
     [
         { texto: "Alto Parque", imagen: "../images/image (8).png" },
-        { texto: "Jardin japones", imagen: "../images/image.png" },
         { texto: "Ecoparque", imagen: "../images/image (6).png" },
         { texto: "Estacion Vertical", imagen: "../images/image (9).png" },
         { texto: "Barrancas de Belgrano", imagen: "../images/image (4).png" },

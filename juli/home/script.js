@@ -1,8 +1,8 @@
 import { subMenu, informacion } from "../repository.js";
 
 for (let i = 0; i < subMenu.length; i++) {
-    let menu = document.getElementById(`submenu${i+1}`)
-    for (let index = 1; index < subMenu[i].length; index++) {
+    let menu = document.getElementById(`submenu${i + 1}`)
+    for (let index = 0; index < subMenu[i].length; index++) {
         let li = document.createElement("li")
         let a = document.createElement("a")
 
@@ -73,54 +73,54 @@ function mostrarPlanes(data) {
 
 let mostrarFavoritos = (favorito) => {
     console.log(favorito)
-        for (let i = 0; i < informacion[0].length; i++) {
-            console.log(informacion[0][i].texto)
-            if (informacion[0][i].texto === favorito.texto) {
-                console.log("encontrado")
-                // Crear el contenedor principal de la grilla
-                const gridItem = document.createElement("div");
-                gridItem.classList.add("widgetFavoritos");
+    for (let i = 0; i < informacion[0].length; i++) {
+        console.log(informacion[0][i].texto)
+        if (informacion[0][i].texto === favorito.texto) {
+            console.log("encontrado")
+            // Crear el contenedor principal de la grilla
+            const gridItem = document.createElement("div");
+            gridItem.classList.add("widgetFavoritos");
 
-                // Crear el enlace
-                const link = document.createElement("a");
+            // Crear el enlace
+            const link = document.createElement("a");
 
-                link.href = `../final/final.html`;
-                sessionStorage.setItem("item", (i + 1).toString())
-                link.classList.add("link");
+            link.href = `../final/final.html`;
+            sessionStorage.setItem("item", (i + 1).toString())
+            link.classList.add("link");
 
-                // Crear el contenedor de la imagen
-                const imagenContainer = document.createElement("div");
-                imagenContainer.classList.add("imagenFavoritos");
+            // Crear el contenedor de la imagen
+            const imagenContainer = document.createElement("div");
+            imagenContainer.classList.add("imagenFavoritos");
 
-                // Crear la imagen
-                const imagen = document.createElement("img");
-                imagen.id = `imagen${i++} `;
-                imagen.classList.add("imagen");
-                imagen.src = favorito.imagen; // Especifica la URL de la imagen si la tienes
-                imagen.alt = `Imagen ${i++} `;
+            // Crear la imagen
+            const imagen = document.createElement("img");
+            imagen.id = `imagen${i++} `;
+            imagen.classList.add("imagen");
+            imagen.src = favorito.imagen; // Especifica la URL de la imagen si la tienes
+            imagen.alt = `Imagen ${i++} `;
 
-                // Añadir la imagen al contenedor de la imagen
-                imagenContainer.appendChild(imagen);
+            // Añadir la imagen al contenedor de la imagen
+            imagenContainer.appendChild(imagen);
 
-                // Crear el párrafo de texto
-                const texto = document.createElement("p");
-                texto.id = "texto5";
-                texto.textContent = favorito.texto; // Especifica el texto si lo tienes
+            // Crear el párrafo de texto
+            const texto = document.createElement("p");
+            texto.id = "texto5";
+            texto.textContent = favorito.texto; // Especifica el texto si lo tienes
 
-                // Añadir el contenedor de la imagen y el texto al enlace
-                link.appendChild(imagenContainer);
-                link.appendChild(texto);
+            // Añadir el contenedor de la imagen y el texto al enlace
+            link.appendChild(imagenContainer);
+            link.appendChild(texto);
 
-                // Añadir el enlace al contenedor principal de la grilla
-                gridItem.appendChild(link);
+            // Añadir el enlace al contenedor principal de la grilla
+            gridItem.appendChild(link);
 
-                // Insertar el elemento de la grilla en el documento (por ejemplo, en un contenedor con id "grid")
-                document.getElementById("sideMenu").appendChild(gridItem);
+            // Insertar el elemento de la grilla en el documento (por ejemplo, en un contenedor con id "grid")
+            document.getElementById("sideMenu").appendChild(gridItem);
 
 
-            }
+        }
 
-        
+
 
     }
 }
@@ -154,7 +154,7 @@ document.getElementById("messi").addEventListener("click", () => {
 
 
 
-fetchData("planes", (data)=>{
+fetchData("planes", (data) => {
     console.log("HOlaa")
     console.log(data)
     mostrarPlanes(data)

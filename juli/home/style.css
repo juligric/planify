@@ -154,7 +154,170 @@ header{
   align-items: center;
 
 
+
 }
+.navegacion ul{
+  list-style: none;
+
+}
+
+
+.menu > li{
+position: relative ;
+display: inline-block;
+margin: 0 15px;
+}
+.menu > li > a{
+  display: block;
+  padding: 15px 20px;
+  color: black;
+  text-decoration: none;
+  
+
+}
+.menu li a:hover {
+  color: grey;
+  transition: all .3s;/* para que tarde mas en pintarse*/
+
+
+}
+/*submenu1*/
+
+
+.submenu1 {
+  position: absolute;
+  background: white;
+  width: 500px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+}
+
+.submenu1 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+.menu li:hover .submenu1 {
+  display: grid;
+
+}
+
+.submenu2 {
+  position: absolute;
+  background: white;
+  width: 500px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+
+}
+
+.submenu2 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+.menu li:hover .submenu2 {
+  display: grid;
+
+}
+
+.submenu3 {
+  position: absolute;
+  background: white;
+  width: 500px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+
+}
+
+.submenu3 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+.menu li:hover .submenu3 {
+  display: grid;
+
+}
+
+.submenu4 {
+  position: absolute;
+  background: white;
+  width: 500px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+} 
+
+.submenu4 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  
+  text-decoration: none;
+}
+.menu li:hover .submenu4 {
+  display: grid;
+
+}
+
+
+.submenu5 {
+  position: absolute;
+  background: white;
+  width: 500px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+  left: -160px;
+} 
+
+.submenu5 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  
+  text-decoration: none;
+}
+.menu li:hover .submenu5 {
+  display: grid;
+
+}
+
+.submenu6 {
+  position: absolute;
+  background: white;
+  width: 500px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 5px; /* Espacio entre elementos */
+  border-radius: 10px;
+  left: -340px;
+} 
+
+.submenu6 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  
+  text-decoration: none;
+}
+.menu li:hover .submenu6 {
+  display: grid;
+
+}
+
 
 .cuadrados {
   width: 100px;

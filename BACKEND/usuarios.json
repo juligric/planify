@@ -105,5 +105,16 @@
         "imagen": "../images/image.png"
       }
     ]
+  },
+  {
+    "username": "jose",
+    "password": "123",
+    "email": "jose",
+    "planes": [
+      {
+        "texto": "Jardin japones",
+        "imagen": "../images/image.png"
+      }
+    ]
   }
 ]

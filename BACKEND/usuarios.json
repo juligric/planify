@@ -103,6 +103,10 @@
       {
         "texto": "Jardin japones",
         "imagen": "../images/image.png"
+      },
+      {
+        "texto": "Jardin japones",
+        "imagen": "../images/image.png"
       }
     ]
   },
@@ -110,6 +114,28 @@
     "username": "jose",
     "password": "123",
     "email": "jose",
+    "planes": [
+      {
+        "texto": "Jardin japones",
+        "imagen": "../images/image.png"
+      }
+    ]
+  },
+  {
+    "username": "12330912312@gmail.com",
+    "password": "bebnn",
+    "email": "12330912312@gmail.com",
+    "planes": [
+      {
+        "texto": "Jardin japones",
+        "imagen": "../images/image.png"
+      }
+    ]
+  },
+  {
+    "username": "12330912312@",
+    "password": "bebnn",
+    "email": "12330912312@",
     "planes": [
       {
         "texto": "Jardin japones",
